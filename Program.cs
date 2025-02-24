@@ -144,6 +144,6 @@ app.MapPost("/add", (License license) =>
 
 app.UseSwagger();
 app.UseSwaggerUI();
-app.Run();
+app.Run("http://0.0.0.0:5009");
 
 public record License(string Name, string LicenseKey, string TimeExpireDaily, string TimeExpire200v);
