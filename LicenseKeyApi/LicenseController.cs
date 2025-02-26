@@ -64,14 +64,20 @@ public class LicenseController : ControllerBase
     {
         if (apiKey != ApiKeyMiddleware.AdminApiKey)
             return Forbid();
-
-        if (_context.Licenses.Any(l => l.LicenseKey == license.LicenseKey))
-            return Conflict("License already exists");
-
-        _context.Licenses.Add(license);
-        _context.SaveChanges();
-        return CreatedAtAction(nameof(GetLicense), new { licenseKey = license.LicenseKey }, license);
+        try
+        {
+            if (_context.Licenses.Any(l => l.LicenseKey == license.LicenseKey))
+                return Conflict("License already exists");
+            _context.Licenses.Add(license);
+            _context.SaveChangesAsync();
+            return Ok(new { message = "License added successfully!" });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { error = ex.Message });
+        }
     }
+    
 
     // ✅ Cập nhật License (Chỉ Admin có quyền)
     [HttpPut("{licenseKey}")]
