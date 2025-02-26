@@ -1,149 +1,153 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.Sqlite;
-using System;
-using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<AppDbContext>();
 var app = builder.Build();
 
-string connectionString = "Data Source=licenseKeys.db";
+// Khóa AES để mã hóa dữ liệu
+var AES_KEY = Encoding.UTF8.GetBytes("ThisIsASecretKey1234567890123456"); // 32 bytes
+var AES_IV = Encoding.UTF8.GetBytes("ThisIsAnIV123456"); // 16 bytes
+const string ADMIN_API_KEY = "MY_SECRET_ADMIN_KEY"; // API Key của admin
 
-// Tạo bảng nếu chưa tồn tại
-using (var connection = new SqliteConnection(connectionString))
+// ✅ Validate License (trả về dữ liệu mã hóa)
+app.MapPost("/api/license/validate", async (AppDbContext db, License input) =>
 {
-    connection.Open();
-    var command = connection.CreateCommand();
-    command.CommandText = @"CREATE TABLE IF NOT EXISTS Licenses (
-        Id INTEGER PRIMARY KEY AUTOINCREMENT,
-        Name TEXT NOT NULL,
-        LicenseKey TEXT UNIQUE NOT NULL,
-        TimeExpireDaily TEXT NOT NULL,
-        TimeExpire200v TEXT NOT NULL,
-        CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-    );";
-    command.ExecuteNonQuery();
+    var license = await db.Licenses.FirstOrDefaultAsync(l => l.Key == input.Key);
+    string message = license != null ? "License Found" : "Invalid License";
+    string expiryDaily = license?.ExpiryDateDaily.ToString("yyyy-MM-dd") ?? "N/A";
+    string expiry200v = license?.ExpiryDate200v.ToString("yyyy-MM-dd") ?? "N/A";
+
+    return Results.Ok(new 
+    { 
+        Message = EncryptData(message), 
+        ExpiryDateDaily = EncryptData(expiryDaily), 
+        ExpiryDate200v = EncryptData(expiry200v) 
+    });
+});
+
+// ✅ Thêm License Key (Chỉ Admin)
+app.MapPost("/api/license/add", async (HttpContext context, AppDbContext db, License newLicense) =>
+{
+    if (!IsAdmin(context)) return Results.Forbid();
+
+    if (await db.Licenses.AnyAsync(l => l.Key == newLicense.Key))
+        return Results.BadRequest(new { Message = EncryptData("License Key already exists") });
+
+    db.Licenses.Add(newLicense);
+    await db.SaveChangesAsync();
+    return Results.Ok(new { Message = EncryptData("License Key added successfully") });
+});
+
+// ✅ Xóa License Key (Chỉ Admin)
+app.MapDelete("/api/license/delete/{key}", async (HttpContext context, AppDbContext db, string key) =>
+{
+    if (!IsAdmin(context)) return Results.Forbid();
+
+    var license = await db.Licenses.FindAsync(key);
+    if (license == null)
+        return Results.NotFound(new { Message = EncryptData("License Key not found") });
+
+    db.Licenses.Remove(license);
+    await db.SaveChangesAsync();
+    return Results.Ok(new { Message = EncryptData("License Key deleted successfully") });
+});
+
+// ✅ Sửa License Key (Chỉ Admin)
+app.MapPut("/api/license/update", async (HttpContext context, AppDbContext db, License updatedLicense) =>
+{
+    if (!IsAdmin(context)) return Results.Forbid();
+
+    var license = await db.Licenses.FindAsync(updatedLicense.Key);
+    if (license == null)
+        return Results.NotFound(new { Message = EncryptData("License Key not found") });
+
+    license.Name = updatedLicense.Name;
+    license.ExpiryDateDaily = updatedLicense.ExpiryDateDaily;
+    license.ExpiryDate200v = updatedLicense.ExpiryDate200v;
+    await db.SaveChangesAsync();
+
+    return Results.Ok(new { Message = EncryptData("License Key updated successfully") });
+});
+
+// ✅ Lấy danh sách tất cả License Key (Chỉ Admin)
+app.MapGet("/api/license/all", async (HttpContext context, AppDbContext db) =>
+{
+    if (!IsAdmin(context)) return Results.Forbid();
+
+    var encryptedData = await db.Licenses
+        .Select(l => new
+        {
+            Name = EncryptData(l.Name),
+            Key = EncryptData(l.Key),
+            ExpiryDateDaily = EncryptData(l.ExpiryDateDaily.ToString("yyyy-MM-dd")),
+            ExpiryDate200v = EncryptData(l.ExpiryDate200v.ToString("yyyy-MM-dd"))
+        })
+        .ToListAsync();
+
+    return Results.Ok(encryptedData);
+});
+
+// ✅ Trả về những key đã hết hạn (Chỉ Admin)
+app.MapGet("/api/license/expired", async (HttpContext context, AppDbContext db) =>
+{
+    if (!IsAdmin(context)) return Results.Forbid();
+
+    var expired = await db.Licenses
+        .Where(l => l.ExpiryDateDaily < DateTime.UtcNow || l.ExpiryDate200v < DateTime.UtcNow)
+        .Select(l => new
+        {
+            Name = EncryptData(l.Name),
+            Key = EncryptData(l.Key),
+            ExpiryDateDaily = EncryptData(l.ExpiryDateDaily.ToString("yyyy-MM-dd")),
+            ExpiryDate200v = EncryptData(l.ExpiryDate200v.ToString("yyyy-MM-dd"))
+        })
+        .ToListAsync();
+
+    return Results.Ok(expired);
+});
+
+// ✅ Trả về những key còn hạn (Chỉ Admin)
+app.MapGet("/api/license/valid", async (HttpContext context, AppDbContext db) =>
+{
+    if (!IsAdmin(context)) return Results.Forbid();
+
+    var valid = await db.Licenses
+        .Where(l => l.ExpiryDateDaily > DateTime.UtcNow || l.ExpiryDate200v > DateTime.UtcNow)
+        .Select(l => new
+        {
+            Name = EncryptData(l.Name),
+            Key = EncryptData(l.Key),
+            ExpiryDateDaily = EncryptData(l.ExpiryDateDaily.ToString("yyyy-MM-dd")),
+            ExpiryDate200v = EncryptData(l.ExpiryDate200v.ToString("yyyy-MM-dd"))
+        })
+        .ToListAsync();
+
+    return Results.Ok(valid);
+});
+
+// ✅ Hàm kiểm tra Admin
+bool IsAdmin(HttpContext context)
+{
+    return context.Request.Headers["api_key"] == ADMIN_API_KEY;
 }
 
-app.MapGet("/validate/{licenseKey}", (string licenseKey) =>
+// ✅ Hàm mã hóa AES
+string EncryptData(string plainText)
 {
-    using var connection = new SqliteConnection(connectionString);
-    connection.Open();
-    var command = connection.CreateCommand();
-    command.CommandText = "SELECT Name, TimeExpireDaily FROM Licenses WHERE LicenseKey = @licenseKey";
-    command.Parameters.AddWithValue("@licenseKey", licenseKey);
+    using Aes aes = Aes.Create();
+    aes.Key = AES_KEY;
+    aes.IV = AES_IV;
 
-    using var reader = command.ExecuteReader();
-    if (reader.Read())
-    {
-        return Results.Json(new { Name = reader.GetString(0), TimeExpire = reader.GetString(1) });
-    }
-    return Results.Json(null);
-});
+    using ICryptoTransform encryptor = aes.CreateEncryptor();
+    byte[] plainBytes = Encoding.UTF8.GetBytes(plainText);
+    byte[] cipherBytes = encryptor.TransformFinalBlock(plainBytes, 0, plainBytes.Length);
+    return Convert.ToBase64String(cipherBytes);
+}
 
-app.MapGet("/list", () =>
-{
-    var licenses = new List<License>();
-    using var connection = new SqliteConnection(connectionString);
-    connection.Open();
-    var command = connection.CreateCommand();
-    command.CommandText = "SELECT Name, LicenseKey, TimeExpireDaily, TimeExpire200v FROM Licenses";
-    
-    using var reader = command.ExecuteReader();
-    while (reader.Read())
-    {
-        licenses.Add(new License(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3)));
-    }
-    return Results.Json(licenses);
-});
-
-app.MapGet("/count", () =>
-{
-    using var connection = new SqliteConnection(connectionString);
-    connection.Open();
-    var command = connection.CreateCommand();
-    command.CommandText = "SELECT COUNT(*) FROM Licenses";
-    
-    int count = Convert.ToInt32(command.ExecuteScalar());
-    return Results.Json(new { TotalLicenses = count });
-});
-
-app.MapGet("/search/{name}", (string name) =>
-{
-    var licenses = new List<License>();
-    using var connection = new SqliteConnection(connectionString);
-    connection.Open();
-    var command = connection.CreateCommand();
-    command.CommandText = "SELECT Name, LicenseKey, TimeExpireDaily, TimeExpire200v FROM Licenses WHERE Name LIKE @name";
-    command.Parameters.AddWithValue("@name", "%" + name + "%");
-    
-    using var reader = command.ExecuteReader();
-    while (reader.Read())
-    {
-        licenses.Add(new License(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3)));
-    }
-    return Results.Json(licenses);
-});
-
-app.MapGet("/filterByExpireDate/{date}", (string date) =>
-{
-    var licenses = new List<License>();
-    using var connection = new SqliteConnection(connectionString);
-    connection.Open();
-    var command = connection.CreateCommand();
-    command.CommandText = "SELECT Name, LicenseKey, TimeExpireDaily, TimeExpire200v FROM Licenses WHERE TimeExpireDaily = @date";
-    command.Parameters.AddWithValue("@date", date);
-    
-    using var reader = command.ExecuteReader();
-    while (reader.Read())
-    {
-        licenses.Add(new License(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3)));
-    }
-    return Results.Json(licenses);
-});
-
-app.MapGet("/isValid/{licenseKey}", (string licenseKey) =>
-{
-    using var connection = new SqliteConnection(connectionString);
-    connection.Open();
-    var command = connection.CreateCommand();
-    command.CommandText = "SELECT TimeExpireDaily FROM Licenses WHERE LicenseKey = @licenseKey";
-    command.Parameters.AddWithValue("@licenseKey", licenseKey);
-
-    using var reader = command.ExecuteReader();
-    if (reader.Read())
-    {
-        DateTime expireDate = DateTime.Parse(reader.GetString(0));
-        return Results.Json(new { IsValid = expireDate > DateTime.UtcNow });
-    }
-    return Results.Json(new { IsValid = false });
-});
-
-app.MapPost("/add", (License license) =>
-{
-    using var connection = new SqliteConnection(connectionString);
-    connection.Open();
-    var command = connection.CreateCommand();
-    command.CommandText = "INSERT INTO Licenses (Name, LicenseKey, TimeExpireDaily, TimeExpire200v) VALUES (@name, @licenseKey, @timeExpireDaily, @timeExpire200v)";
-    command.Parameters.AddWithValue("@name", license.Name);
-    command.Parameters.AddWithValue("@licenseKey", license.LicenseKey);
-    command.Parameters.AddWithValue("@timeExpireDaily", license.TimeExpireDaily);
-    command.Parameters.AddWithValue("@timeExpire200v", license.TimeExpire200v);
-    
-    try
-    {
-        command.ExecuteNonQuery();
-        return Results.Ok("License added successfully");
-    }
-    catch (Exception ex)
-    {
-        return Results.Problem("Error adding license: " + ex.Message);
-    }
-});
-
-app.UseSwagger();
-app.UseSwaggerUI();
+// Chạy ứng dụng
 app.Run("http://0.0.0.0:5009");
-
-public record License(string Name, string LicenseKey, string TimeExpireDaily, string TimeExpire200v);
