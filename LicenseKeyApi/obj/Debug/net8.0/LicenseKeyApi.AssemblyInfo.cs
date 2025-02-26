@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LicenseKeyApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e80dcf020cf027f962d1cb705d94d9fc0824ceb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a674a22bfc163711d22d6d857b5c982cefa483c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LicenseKeyApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LicenseKeyApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
