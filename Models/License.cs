@@ -1,11 +1,11 @@
-using System;
-using System.ComponentModel.DataAnnotations;
-
-public class License
+namespace LicenseAPI.Models
 {
-    [Key]
-    public string Key { get; set; } = string.Empty; // License Key (Primary Key)
-    public string Name { get; set; } = string.Empty; // Tên License
-    public DateTime ExpiryDateDaily { get; set; } // Ngày hết hạn Daily
-    public DateTime ExpiryDate200v { get; set; } // Ngày hết hạn 200v
+    public class License
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Key { get; set; }
+        public string ExpiryDateDaily { get; set; }
+        public string ExpiryDate200v { get; set; }
+    }
 }
