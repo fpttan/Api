@@ -28,34 +28,36 @@ public class LicenseController : ControllerBase
     }
 
     [HttpGet("{key}")]
-    public IActionResult GetLicense(string key)
+public IActionResult GetLicense(string key)
+{
+    var license = _context.Licenses.Find(key);
+    if (license == null) return NotFound();
+
+    // Serialize object JSON
+    var jsonData = System.Text.Json.JsonSerializer.Serialize(license);
+
+    // Mã hóa AES
+    var encryptedLicense = EncryptData(jsonData, out string ivBase64);
+
+    return Ok(new { data = encryptedLicense, iv = ivBase64 });
+}
+
+private string EncryptData(string plainText, out string ivBase64)
+{
+    using (Aes aes = Aes.Create())
     {
-        var license = _context.Licenses.Find(key);
-        if (license == null) return NotFound();
-
-        // Serialize object JSON
-        var jsonData = System.Text.Json.JsonSerializer.Serialize(license);
-
-        // Mã hóa AES
-        var encryptedLicense = EncryptData(jsonData);
-
-        return Ok(new { data = encryptedLicense });
-    }
-
-    private string EncryptData(string plainText)
-    {
-        using (Aes aes = Aes.Create())
+        aes.Key = Encoding.UTF8.GetBytes("12345678901234567890123456789012"); // 32 bytes key (AES-256)
+        aes.GenerateIV(); // Sinh IV ngẫu nhiên
+        ivBase64 = Convert.ToBase64String(aes.IV); // Lưu IV dưới dạng Base64
+        
+        using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
         {
-            aes.Key = Encoding.UTF8.GetBytes("12345678901234567890123456789012"); // 32 bytes key
-            aes.IV = Encoding.UTF8.GetBytes("1234567890123456"); // 16 bytes IV
-            using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
-            {
-                byte[] inputBuffer = Encoding.UTF8.GetBytes(plainText);
-                byte[] result = encryptor.TransformFinalBlock(inputBuffer, 0, inputBuffer.Length);
-                return Convert.ToBase64String(result);
-            }
+            byte[] inputBuffer = Encoding.UTF8.GetBytes(plainText);
+            byte[] encryptedData = encryptor.TransformFinalBlock(inputBuffer, 0, inputBuffer.Length);
+            return Convert.ToBase64String(encryptedData);
         }
     }
+}
 
 
     // ✅ Thêm License mới (Chỉ Admin có quyền)
