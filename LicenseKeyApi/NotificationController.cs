@@ -83,7 +83,7 @@ public IActionResult GetLinkdownBRA()
     {
         using (Aes aes = Aes.Create())
         {
-            aes.Key = Encoding.UTF8.GetBytes("12345678901234567890123456789012"); // 32 bytes key (AES-256)
+            aes.Key = ConvertHexStringToByteArray(ApiKeyMiddleware.AESKey);
             aes.GenerateIV(); // Sinh IV ngẫu nhiên
             string ivBase64 = Convert.ToBase64String(aes.IV); // Lưu IV dưới dạng Base64
 
@@ -95,6 +95,16 @@ public IActionResult GetLinkdownBRA()
                 return new { data = encryptedBase64, data2 = ivBase64 };
             }
         }
+    }
+      // Chuyển chuỗi HEX sang mảng byte
+    private static byte[] ConvertHexStringToByteArray(string hex)
+    {
+        byte[] bytes = new byte[hex.Length / 2];
+        for (int i = 0; i < bytes.Length; i++)
+        {
+            bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+        }
+        return bytes;
     }
 }
 
