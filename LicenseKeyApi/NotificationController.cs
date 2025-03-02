@@ -92,7 +92,7 @@ public IActionResult GetLinkdownBRA()
                 byte[] inputBuffer = Encoding.UTF8.GetBytes(plainText);
                 byte[] encryptedData = encryptor.TransformFinalBlock(inputBuffer, 0, inputBuffer.Length);
                 string encryptedBase64 = Convert.ToBase64String(encryptedData);
-                return new { data = encryptedBase64, iv = ivBase64 };
+                return new { data = encryptedBase64, data2 = ivBase64 };
             }
         }
     }
