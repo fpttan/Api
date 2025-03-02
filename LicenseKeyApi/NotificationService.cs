@@ -1,4 +1,4 @@
-public class NotificationService
+﻿public class NotificationService
 {
     public string NotificationVN { get; private set; } = "Thông báo mặc định VN";
     public string NotificationBRA { get; private set; } = "Mensagem padrão do Brasil";
@@ -17,3 +17,4 @@ public class NotificationService
     public void UpdateLinkdownVN(string newLink) => LinkdownVN = newLink;
     public void UpdateLinkdownBRA(string newLink) => LinkdownBRA = newLink;
 }
+

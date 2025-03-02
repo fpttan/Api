@@ -80,7 +80,8 @@ public class LicenseController : ControllerBase
             // Kiểm tra định dạng ngày tháng (dd/MM/yyyy)
             if (!IsValidDateFormat(license.TimeExpireDaily) || !IsValidDateFormat(license.TimeExpire200v))
                 return BadRequest(new { error = "Ngày tháng không hợp lệ! Định dạng đúng: dd/MM/yyyy" });
-
+            if(!IsValidBoolFormat(license.Multiversion))
+                return BadRequest(new { error = "dữ liệu Multiversion không hợp lệ" });
             _context.Licenses.Add(license);
             _context.SaveChangesAsync();
             return Ok(new { message = "License added successfully!" });
@@ -105,11 +106,13 @@ public class LicenseController : ControllerBase
         // Kiểm tra định dạng ngày tháng (dd/MM/yyyy)
         if (!IsValidDateFormat(updatedLicense.TimeExpireDaily) || !IsValidDateFormat(updatedLicense.TimeExpire200v))
             return BadRequest(new { error = "Ngày tháng không hợp lệ! Định dạng đúng: dd/MM/yyyy" });
-
+        if (!IsValidBoolFormat(license.Multiversion))
+            return BadRequest(new { error = "dữ liệu Multiversion không hợp lệ" });
         // Cập nhật thông tin License
         license.Name = updatedLicense.Name;
         license.TimeExpireDaily = updatedLicense.TimeExpireDaily;
         license.TimeExpire200v = updatedLicense.TimeExpire200v;
+        license.Multiversion = updatedLicense.Multiversion;
 
         _context.SaveChanges();
         return Ok(license);
@@ -124,6 +127,10 @@ public class LicenseController : ControllerBase
         string[] formats = { "d/M/yyyy", "dd/MM/yyyy" };
         var result = DateTime.TryParseExact(date, formats, null, System.Globalization.DateTimeStyles.None, out DateTime hihi);
         return result;
+    }
+    private bool IsValidBoolFormat(string multi)
+    {
+        return  bool.TryParse(multi, out bool multiversion);
     }
 
     // ✅ Xóa License (Chỉ Admin có quyền)

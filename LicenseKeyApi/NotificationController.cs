@@ -4,46 +4,42 @@ using System.Text;
 
 [Route("api/notifications")]
 [ApiController]
-    public class NotificationController : ControllerBase
-    {
-        private readonly NotificationService _notificationService;
+public class NotificationController : ControllerBase
+{
+    private readonly NotificationService _notificationService;
 
-        public NotificationController(NotificationService notificationService)
-        {
-            _notificationService = notificationService;
-        }
-
-        // ✅ Lấy thông báo VN (đã mã hóa)
-    [HttpGet("vn")]
-    public IActionResult GetNotificationVN()
+    public NotificationController(NotificationService notificationService)
     {
-            string rawresult = _notificationService.GetNotificationVN();
-            return Ok(EncryptData(rawresult,out string ivBase64));
+        _notificationService = notificationService;
     }
 
-    // ✅ Lấy thông báo Brazil (đã mã hóa)
-    [HttpGet("bra")]
-    public IActionResult GetNotificationBRA()
-    {
-            string rawresult = _notificationService.GetNotificationBRA();
-            return Ok(EncryptData(rawresult, out string ivBase64));
-    }
+    // ✅ Lấy thông báo VN (đã mã hóa)
+[HttpGet("vn")]
+public IActionResult GetNotificationVN()
+{
+    return Ok(EncryptResponse(_notificationService.GetNotificationVN()));
+}
 
-    // ✅ Lấy link tải xuống VN (đã mã hóa)
-    [HttpGet("linkdown/vn")]
-    public IActionResult GetLinkdownVN()
-    {
-            string rawresult = _notificationService.GetLinkdownVN();
-            return Ok(EncryptData(rawresult, out string ivBase64));
-    }
+// ✅ Lấy thông báo Brazil (đã mã hóa)
+[HttpGet("bra")]
+public IActionResult GetNotificationBRA()
+{
+    return Ok(EncryptResponse(_notificationService.GetNotificationBRA()));
+}
 
-    // ✅ Lấy link tải xuống Brazil (đã mã hóa)
-    [HttpGet("linkdown/bra")]
-    public IActionResult GetLinkdownBRA()
-    {
-            string rawresult = _notificationService.GetLinkdownBRA();
-            return Ok(EncryptData(rawresult, out string ivBase64));
-    }
+// ✅ Lấy link tải xuống VN (đã mã hóa)
+[HttpGet("linkdown/vn")]
+public IActionResult GetLinkdownVN()
+{
+    return Ok(EncryptResponse(_notificationService.GetLinkdownVN()));
+}
+
+// ✅ Lấy link tải xuống Brazil (đã mã hóa)
+[HttpGet("linkdown/bra")]
+public IActionResult GetLinkdownBRA()
+{
+    return Ok(EncryptResponse(_notificationService.GetLinkdownBRA()));
+}
 
 
     // ✅ API cập nhật thông báo tiếng Việt (chỉ admin)
@@ -83,52 +79,23 @@ using System.Text;
     }
 
     // ✅ Hàm mã hóa AES-256
-    private static object EncryptData(string plainText, out string ivBase64)
+    private object EncryptResponse(string plainText)
     {
         using (Aes aes = Aes.Create())
         {
-            aes.Key = ConvertHexStringToByteArray(ApiKeyMiddleware.AESKey);
+            aes.Key = Encoding.UTF8.GetBytes("12345678901234567890123456789012"); // 32 bytes key (AES-256)
             aes.GenerateIV(); // Sinh IV ngẫu nhiên
-            ivBase64 = Convert.ToBase64String(aes.IV); // Lưu IV dưới dạng Base64
+            string ivBase64 = Convert.ToBase64String(aes.IV); // Lưu IV dưới dạng Base64
 
             using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
             {
                 byte[] inputBuffer = Encoding.UTF8.GetBytes(plainText);
                 byte[] encryptedData = encryptor.TransformFinalBlock(inputBuffer, 0, inputBuffer.Length);
                 string encryptedBase64 = Convert.ToBase64String(encryptedData);
-                return new { data = encryptedBase64, data2 = ivBase64 };
+                return new { data = encryptedBase64, iv = ivBase64 };
             }
         }
     }
-    // Chuyển chuỗi HEX sang mảng byte
-    private static byte[] ConvertHexStringToByteArray(string hex)
-    {
-        byte[] bytes = new byte[hex.Length / 2];
-        for (int i = 0; i < bytes.Length; i++)
-        {
-            bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
-        }
-        return bytes;
-    }
-
 }
 
-public class NotificationService
-{
-    public string NotificationVN { get; private set; } = "Thông báo mặc định VN";
-    public string NotificationBRA { get; private set; } = "Mensagem padrão do Brasil";
-    public string LinkdownVN { get; private set; } = "https://example.com/vn";
-    public string LinkdownBRA { get; private set; } = "https://example.com/bra";
 
-    // ✅ GET methods
-    public string GetNotificationVN() => NotificationVN;
-    public string GetNotificationBRA() => NotificationBRA;
-    public string GetLinkdownVN() => LinkdownVN;
-    public string GetLinkdownBRA() => LinkdownBRA;
-
-    // ✅ UPDATE methods
-    public void UpdateNotificationVN(string newMessage) => NotificationVN = newMessage;
-    public void UpdateNotificationBRA(string newMessage) => NotificationBRA = newMessage;
-    public void UpdateLinkdownVN(string newLink) => LinkdownVN = newLink;
-    public void UpdateLinkdownBRA(string newLink) => LinkdownBRA = newLink;
-}
