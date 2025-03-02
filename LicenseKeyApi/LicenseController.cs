@@ -1,7 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -28,37 +25,46 @@ public class LicenseController : ControllerBase
     }
 
     [HttpGet("{key}")]
-public IActionResult GetLicense(string key)
-{
-    var license = _context.Licenses.Find(key);
-    if (license == null) return NotFound();
-
-    // Serialize object JSON
-    var jsonData = System.Text.Json.JsonSerializer.Serialize(license);
-
-    // Mã hóa AES
-    var encryptedLicense = EncryptData(jsonData, out string ivBase64);
-
-    return Ok(new { data = encryptedLicense, iv = ivBase64 });
-}
-
-private string EncryptData(string plainText, out string ivBase64)
-{
-    using (Aes aes = Aes.Create())
+    public IActionResult GetLicense(string key)
     {
-        aes.Key = Encoding.UTF8.GetBytes("12345678901234567890123456789012"); // 32 bytes key (AES-256)
-        aes.GenerateIV(); // Sinh IV ngẫu nhiên
-        ivBase64 = Convert.ToBase64String(aes.IV); // Lưu IV dưới dạng Base64
-        
-        using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
+        var license = _context.Licenses.Find(key);
+        if (license == null) return NotFound();
+
+        // Serialize object JSON
+        var jsonData = System.Text.Json.JsonSerializer.Serialize(license);
+
+        // Mã hóa AES
+        var encryptedLicense = EncryptData(jsonData, out string ivBase64);
+
+        return Ok(new { data = encryptedLicense, data2 = ivBase64 });
+    }
+
+    private static string EncryptData(string plainText, out string ivBase64)
+    {
+        using (Aes aes = Aes.Create())
         {
-            byte[] inputBuffer = Encoding.UTF8.GetBytes(plainText);
-            byte[] encryptedData = encryptor.TransformFinalBlock(inputBuffer, 0, inputBuffer.Length);
-            return Convert.ToBase64String(encryptedData);
+            aes.Key = ConvertHexStringToByteArray(ApiKeyMiddleware.AESKey);
+            aes.GenerateIV(); // Sinh IV ngẫu nhiên
+            ivBase64 = Convert.ToBase64String(aes.IV); // Lưu IV dưới dạng Base64
+        
+            using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
+            {
+                byte[] inputBuffer = Encoding.UTF8.GetBytes(plainText);
+                byte[] encryptedData = encryptor.TransformFinalBlock(inputBuffer, 0, inputBuffer.Length);
+                return Convert.ToBase64String(encryptedData);
+            }
         }
     }
-}
-
+    // Chuyển chuỗi HEX sang mảng byte
+    private static byte[] ConvertHexStringToByteArray(string hex)
+    {
+        byte[] bytes = new byte[hex.Length / 2];
+        for (int i = 0; i < bytes.Length; i++)
+        {
+            bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+        }
+        return bytes;
+    }
 
     // ✅ Thêm License mới (Chỉ Admin có quyền)
     [HttpPost]
@@ -70,6 +76,11 @@ private string EncryptData(string plainText, out string ivBase64)
         {
             if (_context.Licenses.Any(l => l.LicenseKey == license.LicenseKey))
                 return Conflict("License already exists");
+            
+            // Kiểm tra định dạng ngày tháng (dd/MM/yyyy)
+            if (!IsValidDateFormat(license.TimeExpireDaily) || !IsValidDateFormat(license.TimeExpire200v))
+                return BadRequest(new { error = "Ngày tháng không hợp lệ! Định dạng đúng: dd/MM/yyyy" });
+
             _context.Licenses.Add(license);
             _context.SaveChangesAsync();
             return Ok(new { message = "License added successfully!" });
@@ -82,14 +93,18 @@ private string EncryptData(string plainText, out string ivBase64)
     
 
     // ✅ Cập nhật License (Chỉ Admin có quyền)
-    [HttpPut("{licenseKey}")]
-    public IActionResult UpdateLicense([FromHeader(Name = "X-API-KEY")] string apiKey, string licenseKey, [FromBody] License updatedLicense)
+    [HttpPut("updatelicense")]
+    public IActionResult UpdateLicense([FromHeader(Name = "X-API-KEY")] string apiKey,  [FromBody] License updatedLicense)
     {
         if (apiKey != ApiKeyMiddleware.AdminApiKey)
             return Forbid();
 
-        var license = _context.Licenses.FirstOrDefault(l => l.LicenseKey == licenseKey);
+        var license = _context.Licenses.FirstOrDefault(l => l.LicenseKey == updatedLicense.LicenseKey);
         if (license == null) return NotFound();
+
+        // Kiểm tra định dạng ngày tháng (dd/MM/yyyy)
+        if (!IsValidDateFormat(updatedLicense.TimeExpireDaily) || !IsValidDateFormat(updatedLicense.TimeExpire200v))
+            return BadRequest(new { error = "Ngày tháng không hợp lệ! Định dạng đúng: dd/MM/yyyy" });
 
         // Cập nhật thông tin License
         license.Name = updatedLicense.Name;
@@ -98,6 +113,17 @@ private string EncryptData(string plainText, out string ivBase64)
 
         _context.SaveChanges();
         return Ok(license);
+        }
+
+    // Hàm kiểm tra định dạng ngày tháng
+    private bool IsValidDateFormat(string date)
+    {
+        if (string.IsNullOrWhiteSpace(date))
+            return true;
+
+        string[] formats = { "d/M/yyyy", "dd/MM/yyyy" };
+        var result = DateTime.TryParseExact(date, formats, null, System.Globalization.DateTimeStyles.None, out DateTime hihi);
+        return result;
     }
 
     // ✅ Xóa License (Chỉ Admin có quyền)
