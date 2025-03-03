@@ -27,7 +27,7 @@ public class LicenseController : ControllerBase
     [HttpGet("{key}")]
     public IActionResult GetLicense(string key)
     {
-        var license = _context.Licenses.FirstOrDefault(key);
+        var license = _context.Licenses.Find(key);
         if (license == null) return NotFound();
 
         // Serialize object JSON
