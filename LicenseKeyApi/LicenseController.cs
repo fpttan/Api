@@ -27,7 +27,7 @@ public class LicenseController : ControllerBase
     [HttpGet("{key}")]
     public IActionResult GetLicense(string key)
     {
-        var license = _context.Licenses.Find(key);
+        var license = _context.Licenses.FirstOrDefault(key);
         if (license == null) return NotFound();
 
         // Serialize object JSON
@@ -74,6 +74,9 @@ public class LicenseController : ControllerBase
             return Forbid();
         try
         {
+            if(string.IsNullOrEmpty(license.LicenseKey))
+                 return BadRequest(new { error = "dữ liệu LicenseKey không hợp lệ" });
+
             if (_context.Licenses.Any(l => l.LicenseKey == license.LicenseKey))
                 return Conflict("License already exists");
             
@@ -100,13 +103,16 @@ public class LicenseController : ControllerBase
         if (apiKey != ApiKeyMiddleware.AdminApiKey)
             return Forbid();
 
+        if(string.IsNullOrEmpty(updatedLicense.LicenseKey))
+                 return BadRequest(new { error = "dữ liệu LicenseKey không hợp lệ" });
+                 
         var license = _context.Licenses.FirstOrDefault(l => l.LicenseKey == updatedLicense.LicenseKey);
         if (license == null) return NotFound();
 
         // Kiểm tra định dạng ngày tháng (dd/MM/yyyy)
         if (!IsValidDateFormat(updatedLicense.TimeExpireDaily) || !IsValidDateFormat(updatedLicense.TimeExpire200v))
             return BadRequest(new { error = "Ngày tháng không hợp lệ! Định dạng đúng: dd/MM/yyyy" });
-        if (!IsValidBoolFormat(license.Multiversion))
+        if (!IsValidBoolFormat(updatedLicense.Multiversion))
             return BadRequest(new { error = "dữ liệu Multiversion không hợp lệ" });
         // Cập nhật thông tin License
         license.Name = updatedLicense.Name;
@@ -130,7 +136,7 @@ public class LicenseController : ControllerBase
     }
     private bool IsValidBoolFormat(string multi)
     {
-        return  bool.TryParse(multi, out bool multiversion);
+        return !string.IsNullOrWhiteSpace(multi) && bool.TryParse(multi, out _);
     }
 
     // ✅ Xóa License (Chỉ Admin có quyền)
