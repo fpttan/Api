@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.RateLimiting;
 
@@ -49,7 +48,10 @@ using (var scope = app.Services.CreateScope())
     else
     {
         Console.WriteLine("✅ Database đã tồn tại.");
+        Console.WriteLine(ApiKeyMiddleware.AdminApiKey);
+        Console.WriteLine(ApiKeyMiddleware.AESKey);
     }
+    
 }
 
 if (!app.Environment.IsDevelopment())
@@ -63,3 +65,6 @@ app.UseRateLimiter();
 app.UseAuthorization();
 app.MapControllers();
 app.Run("http://0.0.0.0:5009");
+
+
+

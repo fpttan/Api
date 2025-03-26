@@ -1,5 +1,14 @@
+using dotenv.net;
 public static class ApiKeyMiddleware
 {
-    public const string AdminApiKey = "nhattandeptraivocung_hoangtubanggia_kieudiemcongchua_ngutrongrung";
-    public const string AESKey = "b078ba8458920a043f0022cbcf7b9211ef72d2a61ebacb23e780c33e099f8559";
+    public static readonly string AdminApiKey;
+    public static readonly string AESKey;
+
+    // Static constructor để khởi tạo giá trị từ biến môi trường
+    static ApiKeyMiddleware()
+    {
+        DotEnv.Load();
+        AdminApiKey = Environment.GetEnvironmentVariable("ADMIN_API_KEY") ?? "default-admin-key";
+        AESKey = Environment.GetEnvironmentVariable("AES_KEY") ?? "default-aes-key";
+    }
 }

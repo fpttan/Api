@@ -5,30 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\licensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\licensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\license.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\license.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\apikeymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\apikeymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\licensedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\licensedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,73 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\NotificationService.cs",
-              "RelativeDocumentMoniker": "LicenseKeyApi\\NotificationService.cs",
-              "ToolTip": "E:\\Api\\LicenseKeyApi\\NotificationService.cs",
-              "RelativeToolTip": "LicenseKeyApi\\NotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T08:29:23.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "License.cs",
-              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\License.cs",
-              "RelativeDocumentMoniker": "LicenseKeyApi\\License.cs",
-              "ToolTip": "E:\\Api\\LicenseKeyApi\\License.cs",
-              "RelativeToolTip": "LicenseKeyApi\\License.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T04:09:38.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NotificationController.cs",
-              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\NotificationController.cs",
-              "RelativeDocumentMoniker": "LicenseKeyApi\\NotificationController.cs",
-              "ToolTip": "E:\\Api\\LicenseKeyApi\\NotificationController.cs",
-              "RelativeToolTip": "LicenseKeyApi\\NotificationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:41:53.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\Program.cs",
-              "RelativeDocumentMoniker": "LicenseKeyApi\\Program.cs",
-              "ToolTip": "E:\\Api\\LicenseKeyApi\\Program.cs",
-              "RelativeToolTip": "LicenseKeyApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:40:48.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LicenseDbContext.cs",
-              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\LicenseDbContext.cs",
-              "RelativeDocumentMoniker": "LicenseKeyApi\\LicenseDbContext.cs",
-              "ToolTip": "E:\\Api\\LicenseKeyApi\\LicenseDbContext.cs",
-              "RelativeToolTip": "LicenseKeyApi\\LicenseDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:40:45.659Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -113,22 +24,9 @@
               "RelativeDocumentMoniker": "LicenseKeyApi\\LicenseController.cs",
               "ToolTip": "E:\\Api\\LicenseKeyApi\\LicenseController.cs",
               "RelativeToolTip": "LicenseKeyApi\\LicenseController.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAmwHQAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:40:41.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApiKeyMiddleware.cs",
-              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\ApiKeyMiddleware.cs",
-              "RelativeDocumentMoniker": "LicenseKeyApi\\ApiKeyMiddleware.cs",
-              "ToolTip": "E:\\Api\\LicenseKeyApi\\ApiKeyMiddleware.cs",
-              "RelativeToolTip": "LicenseKeyApi\\ApiKeyMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T04:09:44.968Z",
+              "WhenOpened": "2025-03-02T16:03:36.142Z",
               "EditorCaption": ""
             }
           ]
