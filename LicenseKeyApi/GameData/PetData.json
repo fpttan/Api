@@ -1,0 +1,1562 @@
+[
+  {
+    "Code": 1,
+    "Name": "Kẻ Lang Thang",
+    "Catch": 1,
+    "CodeMap": 2.0,
+    "ResCode": 2060100000001.0,
+    "IconCode": 3060100000001.0
+  },
+  {
+    "Code": 2,
+    "Name": "Thất Vị Kê",
+    "Catch": 1,
+    "CodeMap": 3.0,
+    "ResCode": 2060100000002.0,
+    "IconCode": 3060100000002.0
+  },
+  {
+    "Code": 3,
+    "Name": "Nấm Bướm Hồng",
+    "Catch": 1,
+    "CodeMap": 2.0,
+    "ResCode": 2060100000015.0,
+    "IconCode": 3060100000015.0
+  },
+  {
+    "Code": 5,
+    "Name": "Lão Cổ Thụ",
+    "Catch": 2,
+    "CodeMap": 26.0,
+    "ResCode": 2060100000005.0,
+    "IconCode": 3060100000005.0
+  },
+  {
+    "Code": 112,
+    "Name": "Tiểu Tiểu Hải Tinh",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000007.0,
+    "IconCode": 3060100000007.0
+  },
+  {
+    "Code": 8,
+    "Name": "Cát Hải Tinh",
+    "Catch": 1,
+    "CodeMap": 40.0,
+    "ResCode": 2060100000008.0,
+    "IconCode": 3060100000008.0
+  },
+  {
+    "Code": 10,
+    "Name": "Băng Cung Chiến Sĩ",
+    "Catch": 8,
+    "CodeMap": 22.0,
+    "ResCode": 2060100000039.0,
+    "IconCode": 3060100000039.0
+  },
+  {
+    "Code": 12,
+    "Name": "Ốc Vệ Sĩ",
+    "Catch": 2,
+    "CodeMap": 17.0,
+    "ResCode": 2060100000012.0,
+    "IconCode": 3060100000012.0
+  },
+  {
+    "Code": 13,
+    "Name": "Ốc Đội Trưởng",
+    "Catch": 4,
+    "CodeMap": 6.0,
+    "ResCode": 2060100000013.0,
+    "IconCode": 3060100000013.0
+  },
+  {
+    "Code": 14,
+    "Name": "Nấm Đông Cô",
+    "Catch": 1,
+    "CodeMap": 3.0,
+    "ResCode": 2060100000015.0,
+    "IconCode": 3060100000015.0
+  },
+  {
+    "Code": 15,
+    "Name": "Chàng Trai Si Tình",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2050070000004.0,
+    "IconCode": 3050070000004.0
+  },
+  {
+    "Code": 16,
+    "Name": "Cô Gái Si Tình",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2050080000002.0,
+    "IconCode": 3050080000002.0
+  },
+  {
+    "Code": 28,
+    "Name": "Tuyết Vực Mai Yêu",
+    "Catch": 5,
+    "CodeMap": 22.0,
+    "ResCode": 2060100000042.0,
+    "IconCode": 3060100000042.0
+  },
+  {
+    "Code": 29,
+    "Name": "Mao Mao Cầu",
+    "Catch": 5,
+    "CodeMap": 22.0,
+    "ResCode": 2060100000041.0,
+    "IconCode": 3060100000041.0
+  },
+  {
+    "Code": 32,
+    "Name": "Tiểu Nấm Yêu",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000014.0,
+    "IconCode": 3060100000014.0
+  },
+  {
+    "Code": 34,
+    "Name": "Tiểu Thái Dương",
+    "Catch": 5,
+    "CodeMap": 18.0,
+    "ResCode": 2060100000047.0,
+    "IconCode": 3060100000047.0
+  },
+  {
+    "Code": 35,
+    "Name": "Bối Long",
+    "Catch": 9,
+    "CodeMap": 18.0,
+    "ResCode": 2060100000048.0,
+    "IconCode": 3060100000048.0
+  },
+  {
+    "Code": 36,
+    "Name": "Tí Hon Đào Đất",
+    "Catch": 7,
+    "CodeMap": 18.0,
+    "ResCode": 2060100000046.0,
+    "IconCode": 3060100000046.0
+  },
+  {
+    "Code": 37,
+    "Name": "Bò Cạp Tím",
+    "Catch": 5,
+    "CodeMap": 18.0,
+    "ResCode": 2060100000043.0,
+    "IconCode": 3060100000043.0
+  },
+  {
+    "Code": 38,
+    "Name": "Mèo Yêu Tinh Nghịch",
+    "Catch": 5,
+    "CodeMap": 19.0,
+    "ResCode": 2060100001069.0,
+    "IconCode": 3060100001069.0
+  },
+  {
+    "Code": 39,
+    "Name": "Gấu Trúc Hồ Lô",
+    "Catch": 9,
+    "CodeMap": 19.0,
+    "ResCode": 2060100000034.0,
+    "IconCode": 3060100000034.0
+  },
+  {
+    "Code": 40,
+    "Name": "Lan Thảo Tinh",
+    "Catch": 5,
+    "CodeMap": 19.0,
+    "ResCode": 2060100000049.0,
+    "IconCode": 3060100000049.0
+  },
+  {
+    "Code": 41,
+    "Name": "Kiến Miệng Rộng",
+    "Catch": 8,
+    "CodeMap": 19.0,
+    "ResCode": 2060100001089.0,
+    "IconCode": 3060100001089.0
+  },
+  {
+    "Code": 42,
+    "Name": "Tiểu Sơn Quái",
+    "Catch": 1,
+    "CodeMap": 4.0,
+    "ResCode": 2060100000018.0,
+    "IconCode": 3060100000018.0
+  },
+  {
+    "Code": 43,
+    "Name": "Độc Nhãn Ốc Đảo",
+    "Catch": 1,
+    "CodeMap": 40.0,
+    "ResCode": 2060100000019.0,
+    "IconCode": 3060100000019.0
+  },
+  {
+    "Code": 111,
+    "Name": "Tiểu Thủy Bào",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000017.0,
+    "IconCode": 3060100000017.0
+  },
+  {
+    "Code": 46,
+    "Name": "Gấu Mật",
+    "Catch": 2,
+    "CodeMap": 33.0,
+    "ResCode": 2060100000025.0,
+    "IconCode": 3060100000025.0
+  },
+  {
+    "Code": 47,
+    "Name": "Gấu Đen Khổng Lồ",
+    "Catch": 3,
+    "CodeMap": 27.0,
+    "ResCode": 2060100000033.0,
+    "IconCode": 3060100000033.0
+  },
+  {
+    "Code": 48,
+    "Name": "Sư Tử Khổng Lồ",
+    "Catch": 8,
+    "CodeMap": 21.0,
+    "ResCode": 2060100000052.0,
+    "IconCode": 3060100000052.0
+  },
+  {
+    "Code": 49,
+    "Name": "Ma Cát",
+    "Catch": 5,
+    "CodeMap": 21.0,
+    "ResCode": 2060100000053.0,
+    "IconCode": 3060100000053.0
+  },
+  {
+    "Code": 50,
+    "Name": "Xương Rồng Tinh",
+    "Catch": 5,
+    "CodeMap": 21.0,
+    "ResCode": 2060100000054.0,
+    "IconCode": 3060100000054.0
+  },
+  {
+    "Code": 51,
+    "Name": "Nham Quái",
+    "Catch": 8,
+    "CodeMap": 21.0,
+    "ResCode": 2060100000055.0,
+    "IconCode": 3060100000055.0
+  },
+  {
+    "Code": 54,
+    "Name": "Ốc Tiểu Binh",
+    "Catch": 1,
+    "CodeMap": 15.0,
+    "ResCode": 2060100000011.0,
+    "IconCode": 3060100000011.0
+  },
+  {
+    "Code": 56,
+    "Name": "Nấm Lục",
+    "Catch": 1,
+    "CodeMap": 3.0,
+    "ResCode": 2060100000016.0,
+    "IconCode": 3060100000016.0
+  },
+  {
+    "Code": 57,
+    "Name": "Độc Nhãn Tinh",
+    "Catch": 2,
+    "CodeMap": 26.0,
+    "ResCode": 2060100000019.0,
+    "IconCode": 3060100000019.0
+  },
+  {
+    "Code": 65,
+    "Name": "Gấu Bùn",
+    "Catch": 3,
+    "CodeMap": 8.0,
+    "ResCode": 2060100000025.0,
+    "IconCode": 3060100000025.0
+  },
+  {
+    "Code": 70,
+    "Name": "Chiến Sĩ Sói",
+    "Catch": 4,
+    "CodeMap": 41.0,
+    "ResCode": 2060100000023.0,
+    "IconCode": 3060100000023.0
+  },
+  {
+    "Code": 72,
+    "Name": "Bà Ngoại Sói",
+    "Catch": 2,
+    "CodeMap": 41.0,
+    "ResCode": 2060100000024.0,
+    "IconCode": 3060100000024.0
+  },
+  {
+    "Code": 73,
+    "Name": "Thủy Lam Bọt",
+    "Catch": 1,
+    "CodeMap": 15.0,
+    "ResCode": 2060100000017.0,
+    "IconCode": 3060100000017.0
+  },
+  {
+    "Code": 74,
+    "Name": "U Hồn Ma Nữ",
+    "Catch": 6,
+    "CodeMap": 14.0,
+    "ResCode": 2060100000026.0,
+    "IconCode": 3060100000026.0
+  },
+  {
+    "Code": 77,
+    "Name": "Gấu Trúc",
+    "Catch": 4,
+    "CodeMap": 27.0,
+    "ResCode": 2060100000035.0,
+    "IconCode": 3060100000035.0
+  },
+  {
+    "Code": 78,
+    "Name": "Khổng Lồ Vân Thiên",
+    "Catch": 1,
+    "CodeMap": 40.0,
+    "ResCode": 2060100000029.0,
+    "IconCode": 3060100000029.0
+  },
+  {
+    "Code": 79,
+    "Name": "Ấu Cương Thi",
+    "Catch": 3,
+    "CodeMap": 14.0,
+    "ResCode": 2060100000027.0,
+    "IconCode": 3060100000027.0
+  },
+  {
+    "Code": 85,
+    "Name": "Thủy Long",
+    "Catch": 9,
+    "CodeMap": 22.0,
+    "ResCode": 2060100000045.0,
+    "IconCode": 3060100000045.0
+  },
+  {
+    "Code": 88,
+    "Name": "Hổ Bì Dương Xanh",
+    "Catch": 2,
+    "CodeMap": 33.0,
+    "ResCode": 2060100000021.0,
+    "IconCode": 3060100000021.0
+  },
+  {
+    "Code": 89,
+    "Name": "Lang Bì Dương",
+    "Catch": 2,
+    "CodeMap": 26.0,
+    "ResCode": 2060100000022.0,
+    "IconCode": 3060100000022.0
+  },
+  {
+    "Code": 103,
+    "Name": "Ếch Xanh Medusa",
+    "Catch": 4,
+    "CodeMap": 6.0,
+    "ResCode": 2060100001064.0,
+    "IconCode": 3060100001064.0
+  },
+  {
+    "Code": 107,
+    "Name": "Nấm Xanh",
+    "Catch": 1,
+    "CodeMap": 2.0,
+    "ResCode": 2060100000016.0,
+    "IconCode": 3060100000016.0
+  },
+  {
+    "Code": 108,
+    "Name": "Nấm Đỏ",
+    "Catch": 1,
+    "CodeMap": 4.0,
+    "ResCode": 2060100000016.0,
+    "IconCode": 3060100000016.0
+  },
+  {
+    "Code": 109,
+    "Name": "Hỏa Kê",
+    "Catch": 1,
+    "CodeMap": 4.0,
+    "ResCode": 2060100000002.0,
+    "IconCode": 3060100000002.0
+  },
+  {
+    "Code": 113,
+    "Name": "Nấm Huyết Sắc",
+    "Catch": 3,
+    "CodeMap": 27.0,
+    "ResCode": 2060100000015.0,
+    "IconCode": 3060100000015.0
+  },
+  {
+    "Code": 114,
+    "Name": "Nấm Kim Điệp",
+    "Catch": 1,
+    "CodeMap": 4.0,
+    "ResCode": 2060100000015.0,
+    "IconCode": 3060100000015.0
+  },
+  {
+    "Code": 115,
+    "Name": "Bạch Tuộc Lục",
+    "Catch": 1,
+    "CodeMap": 15.0,
+    "ResCode": 2060100000006.0,
+    "IconCode": 3060100000006.0
+  },
+  {
+    "Code": 116,
+    "Name": "Sa Tặc Cuồng Phong",
+    "Catch": 1,
+    "CodeMap": 40.0,
+    "ResCode": 2060100000001.0,
+    "IconCode": 3060100000001.0
+  },
+  {
+    "Code": 117,
+    "Name": "Bá Vương Hải Tinh",
+    "Catch": 2,
+    "CodeMap": 17.0,
+    "ResCode": 2060100000008.0,
+    "IconCode": 3060100000008.0
+  },
+  {
+    "Code": 118,
+    "Name": "Bạch Tuộc Xanh",
+    "Catch": 2,
+    "CodeMap": 17.0,
+    "ResCode": 2060100000006.0,
+    "IconCode": 3060100000006.0
+  },
+  {
+    "Code": 119,
+    "Name": "Phỉ Thúy Tinh",
+    "Catch": 2,
+    "CodeMap": 17.0,
+    "ResCode": 2060100000017.0,
+    "IconCode": 3060100000017.0
+  },
+  {
+    "Code": 120,
+    "Name": "Độc Nhãn Da Xanh",
+    "Catch": 2,
+    "CodeMap": 33.0,
+    "ResCode": 2060100000019.0,
+    "IconCode": 3060100000019.0
+  },
+  {
+    "Code": 121,
+    "Name": "Gấu Tuyết",
+    "Catch": 2,
+    "CodeMap": 33.0,
+    "ResCode": 2060100000033.0,
+    "IconCode": 3060100000033.0
+  },
+  {
+    "Code": 122,
+    "Name": "Cổ Thụ Lá Khô",
+    "Catch": 2,
+    "CodeMap": 26.0,
+    "ResCode": 2060100000004.0,
+    "IconCode": 3060100000004.0
+  },
+  {
+    "Code": 123,
+    "Name": "Yêu Hoa Mê Hoặc",
+    "Catch": 6,
+    "CodeMap": 34.0,
+    "ResCode": 2060100000032.0,
+    "IconCode": 3060100000032.0
+  },
+  {
+    "Code": 124,
+    "Name": "Yêu Hoa Diệp Hồn",
+    "Catch": 2,
+    "CodeMap": 34.0,
+    "ResCode": 2060100000032.0,
+    "IconCode": 3060100000032.0
+  },
+  {
+    "Code": 125,
+    "Name": "Yêu Hoa Thất Hồn",
+    "Catch": 2,
+    "CodeMap": 34.0,
+    "ResCode": 2060100000032.0,
+    "IconCode": 3060100000032.0
+  },
+  {
+    "Code": 128,
+    "Name": "Khâu Lăng Sơn Quái",
+    "Catch": 3,
+    "CodeMap": 27.0,
+    "ResCode": 2060100000019.0,
+    "IconCode": 3060100000019.0
+  },
+  {
+    "Code": 129,
+    "Name": "Tuần Binh Sói Mẹ",
+    "Catch": 3,
+    "CodeMap": 8.0,
+    "ResCode": 2060100000024.0,
+    "IconCode": 3060100000024.0
+  },
+  {
+    "Code": 132,
+    "Name": "Nấm Cực Độc",
+    "Catch": 4,
+    "CodeMap": 8.0,
+    "ResCode": 2060100000015.0,
+    "IconCode": 3060100000015.0
+  },
+  {
+    "Code": 133,
+    "Name": "Thủ Vệ Sói Mẹ",
+    "Catch": 3,
+    "CodeMap": 8.0,
+    "ResCode": 2060100000023.0,
+    "IconCode": 3060100000023.0
+  },
+  {
+    "Code": 134,
+    "Name": "Nấm Ăn Thịt",
+    "Catch": 3,
+    "CodeMap": 5.0,
+    "ResCode": 2060100000015.0,
+    "IconCode": 3060100000015.0
+  },
+  {
+    "Code": 135,
+    "Name": "Mã Não Tinh",
+    "Catch": 3,
+    "CodeMap": 5.0,
+    "ResCode": 2060100000017.0,
+    "IconCode": 3060100000017.0
+  },
+  {
+    "Code": 136,
+    "Name": "Hấp Huyết Hải Tinh",
+    "Catch": 4,
+    "CodeMap": 5.0,
+    "ResCode": 2060100000008.0,
+    "IconCode": 3060100000008.0
+  },
+  {
+    "Code": 138,
+    "Name": "Lê Dương Hồ Tặc",
+    "Catch": 3,
+    "CodeMap": 5.0,
+    "ResCode": 2060100000001.0,
+    "IconCode": 3060100000001.0
+  },
+  {
+    "Code": 146,
+    "Name": "Cổ Thụ Khô Cằn",
+    "Catch": 3,
+    "CodeMap": 14.0,
+    "ResCode": 2060100000005.0,
+    "IconCode": 3060100000005.0
+  },
+  {
+    "Code": 147,
+    "Name": "Khổng Lồ Sa Mạc",
+    "Catch": 3,
+    "CodeMap": 14.0,
+    "ResCode": 2060100000029.0,
+    "IconCode": 3060100000029.0
+  },
+  {
+    "Code": 148,
+    "Name": "Bạch Tuộc Độc",
+    "Catch": 4,
+    "CodeMap": 6.0,
+    "ResCode": 2060100000009.0,
+    "IconCode": 3060100000009.0
+  },
+  {
+    "Code": 149,
+    "Name": "Thạch Hải Tinh",
+    "Catch": 4,
+    "CodeMap": 6.0,
+    "ResCode": 2060100000008.0,
+    "IconCode": 3060100000008.0
+  },
+  {
+    "Code": 154,
+    "Name": "Thỏ Lưu Manh",
+    "Catch": 1,
+    "CodeMap": 2.0,
+    "ResCode": 2060100001070.0,
+    "IconCode": 3060100001070.0
+  },
+  {
+    "Code": 179,
+    "Name": "Sơn Quái Hoang Mạc",
+    "Catch": 2,
+    "CodeMap": 41.0,
+    "ResCode": 2060100000018.0,
+    "IconCode": 3060100000018.0
+  },
+  {
+    "Code": 205,
+    "Name": "Thỏ Hoang Điên Loạn",
+    "Catch": 2,
+    "CodeMap": 41.0,
+    "ResCode": 2060100001070.0,
+    "IconCode": 3060100001070.0
+  },
+  {
+    "Code": 266,
+    "Name": "Cướp Mộ",
+    "Catch": 4,
+    "CodeMap": 42.0,
+    "ResCode": 2060100001063.0,
+    "IconCode": 3060100001063.0
+  },
+  {
+    "Code": 267,
+    "Name": "Hề Ác Ma",
+    "Catch": 4,
+    "CodeMap": 42.0,
+    "ResCode": 2060100001065.0,
+    "IconCode": 3060100001065.0
+  },
+  {
+    "Code": 268,
+    "Name": "Vong Linh Viễn Cổ",
+    "Catch": 6,
+    "CodeMap": 42.0,
+    "ResCode": 2060100000031.0,
+    "IconCode": 3060100000031.0
+  },
+  {
+    "Code": 269,
+    "Name": "Xà Yêu",
+    "Catch": 4,
+    "CodeMap": 42.0,
+    "ResCode": 2060100001067.0,
+    "IconCode": 3060100001067.0
+  },
+  {
+    "Code": 285,
+    "Name": "Ong Cửu Li",
+    "Catch": 4,
+    "CodeMap": 16.0,
+    "ResCode": 2060100001068.0,
+    "IconCode": 3060100001068.0
+  },
+  {
+    "Code": 286,
+    "Name": "Hồ Điệp",
+    "Catch": 6,
+    "CodeMap": 16.0,
+    "ResCode": 2060100001078.0,
+    "IconCode": 3060100001078.0
+  },
+  {
+    "Code": 287,
+    "Name": "Cây Xương Rồng",
+    "Catch": 6,
+    "CodeMap": 16.0,
+    "ResCode": 2060100000003.0,
+    "IconCode": 3060100000003.0
+  },
+  {
+    "Code": 289,
+    "Name": "Băng Tinh Bướng Bỉnh",
+    "Catch": 4,
+    "CodeMap": 35.0,
+    "ResCode": 2060100001085.0,
+    "IconCode": 3060100001085.0
+  },
+  {
+    "Code": 290,
+    "Name": "Chuột Tuyết Mạo Hiểm",
+    "Catch": 4,
+    "CodeMap": 35.0,
+    "ResCode": 2060100001056.0,
+    "IconCode": 3060100001056.0
+  },
+  {
+    "Code": 292,
+    "Name": "Tuyết Thú",
+    "Catch": 6,
+    "CodeMap": 35.0,
+    "ResCode": 2060100001086.0,
+    "IconCode": 3060100001086.0
+  },
+  {
+    "Code": 293,
+    "Name": "Lang Nha Vương",
+    "Catch": 4,
+    "CodeMap": 35.0,
+    "ResCode": 2060100001084.0,
+    "IconCode": 3060100001084.0
+  },
+  {
+    "Code": 295,
+    "Name": "Trúc Yêu",
+    "Catch": 5,
+    "CodeMap": 7.0,
+    "ResCode": 2060100001081.0,
+    "IconCode": 3060100001081.0
+  },
+  {
+    "Code": 296,
+    "Name": "Yêu Hồ",
+    "Catch": 5,
+    "CodeMap": 23.0,
+    "ResCode": 2060100001087.0,
+    "IconCode": 3060100001087.0
+  },
+  {
+    "Code": 297,
+    "Name": "Hổ Ruồi",
+    "Catch": 4,
+    "CodeMap": 16.0,
+    "ResCode": 2060100001077.0,
+    "IconCode": 3060100001077.0
+  },
+  {
+    "Code": 307,
+    "Name": "Cự Phong Thần Tử",
+    "Catch": 6,
+    "CodeMap": 28.0,
+    "ResCode": 2060100001079.0,
+    "IconCode": 3060100001079.0
+  },
+  {
+    "Code": 308,
+    "Name": "Hổ Tinh",
+    "Catch": 4,
+    "CodeMap": 28.0,
+    "ResCode": 2060100001073.0,
+    "IconCode": 3060100001073.0
+  },
+  {
+    "Code": 310,
+    "Name": "Quỷ Ham Ăn",
+    "Catch": 4,
+    "CodeMap": 28.0,
+    "ResCode": 2060100001080.0,
+    "IconCode": 3060100001080.0
+  },
+  {
+    "Code": 311,
+    "Name": "Tí Hon Đốn Gỗ",
+    "Catch": 4,
+    "CodeMap": 28.0,
+    "ResCode": 2060100001071.0,
+    "IconCode": 3060100001071.0
+  },
+  {
+    "Code": 329,
+    "Name": "Tuyết Lộ Dũng Sĩ",
+    "Catch": 8,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001088.0,
+    "IconCode": 3060100001088.0
+  },
+  {
+    "Code": 331,
+    "Name": "Nấm Yêu",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000014.0,
+    "IconCode": 3060100000014.0
+  },
+  {
+    "Code": 332,
+    "Name": "Cây Nắp Ấm",
+    "Catch": 7,
+    "CodeMap": 7.0,
+    "ResCode": 2060100001082.0,
+    "IconCode": 3060100001082.0
+  },
+  {
+    "Code": 333,
+    "Name": "Thỏ Chiến Tướng",
+    "Catch": 5,
+    "CodeMap": 7.0,
+    "ResCode": 2060100001060.0,
+    "IconCode": 3060100001060.0
+  },
+  {
+    "Code": 347,
+    "Name": "Búp Bê Đầu To",
+    "Catch": 8,
+    "CodeMap": 7.0,
+    "ResCode": 2060100001075.0,
+    "IconCode": 3060100001075.0
+  },
+  {
+    "Code": 479,
+    "Name": "Mammon",
+    "Catch": 6,
+    "CodeMap": 5.0,
+    "ResCode": 2060100001090.0,
+    "IconCode": 3060100001090.0
+  },
+  {
+    "Code": 480,
+    "Name": "Asmodeus",
+    "Catch": 6,
+    "CodeMap": 14.0,
+    "ResCode": 2060100001093.0,
+    "IconCode": 3060100001093.0
+  },
+  {
+    "Code": 481,
+    "Name": "Beelzebub",
+    "Catch": 7,
+    "CodeMap": 6.0,
+    "ResCode": 2060100001093.0,
+    "IconCode": 3060100001093.0
+  },
+  {
+    "Code": 482,
+    "Name": "Samael",
+    "Catch": 7,
+    "CodeMap": 42.0,
+    "ResCode": 2060100001092.0,
+    "IconCode": 3060100001092.0
+  },
+  {
+    "Code": 483,
+    "Name": "Belphegor",
+    "Catch": 7,
+    "CodeMap": 35.0,
+    "ResCode": 2060100001092.0,
+    "IconCode": 3060100001092.0
+  },
+  {
+    "Code": 484,
+    "Name": "Leviathan",
+    "Catch": 10,
+    "CodeMap": 28.0,
+    "ResCode": 2060100000045.0,
+    "IconCode": 3060100000045.0
+  },
+  {
+    "Code": 75,
+    "Name": "Thiên Diện Quái",
+    "Catch": 5,
+    "CodeMap": 23.0,
+    "ResCode": 2060100000051.0,
+    "IconCode": 3060100000051.0
+  },
+  {
+    "Code": 76,
+    "Name": "Ma Linh",
+    "Catch": 9,
+    "CodeMap": 23.0,
+    "ResCode": 2060100001095.0,
+    "IconCode": 3060100001095.0
+  },
+  {
+    "Code": 82,
+    "Name": "Phục Ma Thủ Vệ",
+    "Catch": 8,
+    "CodeMap": 23.0,
+    "ResCode": 2060100001096.0,
+    "IconCode": 3060100001096.0
+  },
+  {
+    "Code": 4,
+    "Name": "Tiểu Cổ Thụ",
+    "Catch": 1,
+    "CodeMap": 3.0,
+    "ResCode": 2060100000004.0,
+    "IconCode": 3060100000004.0
+  },
+  {
+    "Code": 7,
+    "Name": "Tiểu Hải Tinh",
+    "Catch": 1,
+    "CodeMap": 15.0,
+    "ResCode": 2060100000007.0,
+    "IconCode": 3060100000007.0
+  },
+  {
+    "Code": 44,
+    "Name": "Mèo Kính Đen",
+    "Catch": 2,
+    "CodeMap": 34.0,
+    "ResCode": 2060100000020.0,
+    "IconCode": 3060100000020.0
+  },
+  {
+    "Code": 186,
+    "Name": "Mê Hồn Giáo Chủ",
+    "Catch": 6,
+    "CodeMap": 29.0,
+    "ResCode": 2060100001097.0,
+    "IconCode": 3060100001097.0
+  },
+  {
+    "Code": 188,
+    "Name": "Rùa Nika",
+    "Catch": 9,
+    "CodeMap": 29.0,
+    "ResCode": 2060100001099.0,
+    "IconCode": 3060100001099.0
+  },
+  {
+    "Code": 190,
+    "Name": "Hải Dương Nữ",
+    "Catch": 9,
+    "CodeMap": 29.0,
+    "ResCode": 2060100001098.0,
+    "IconCode": 3060100001098.0
+  },
+  {
+    "Code": 191,
+    "Name": "Cua Yêu",
+    "Catch": 6,
+    "CodeMap": 29.0,
+    "ResCode": 2060100001105.0,
+    "IconCode": 3060100001105.0
+  },
+  {
+    "Code": 506,
+    "Name": "Cánh Tay Viễn Cổ",
+    "Catch": 5,
+    "CodeMap": 24.0,
+    "ResCode": 2060100001101.0,
+    "IconCode": 3060100001101.0
+  },
+  {
+    "Code": 507,
+    "Name": "Thạch Bia Tinh",
+    "Catch": 6,
+    "CodeMap": 24.0,
+    "ResCode": 2060100001102.0,
+    "IconCode": 3060100001102.0
+  },
+  {
+    "Code": 508,
+    "Name": "Bò Cạp Răng Độc",
+    "Catch": 8,
+    "CodeMap": 24.0,
+    "ResCode": 2060100001103.0,
+    "IconCode": 3060100001103.0
+  },
+  {
+    "Code": 509,
+    "Name": "Sứ Giả Địa Ngục",
+    "Catch": 7,
+    "CodeMap": 24.0,
+    "ResCode": 2060100001104.0,
+    "IconCode": 3060100001104.0
+  },
+  {
+    "Code": 110,
+    "Name": "Cây Ăn Quả Nhỏ",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000004.0,
+    "IconCode": 3060100000004.0
+  },
+  {
+    "Code": 610,
+    "Name": "Dực Long",
+    "Catch": 10,
+    "CodeMap": 20.0,
+    "ResCode": 2060100200007.0,
+    "IconCode": 3060100200007.0
+  },
+  {
+    "Code": 613,
+    "Name": "Mộng Lão Ông",
+    "Catch": 7,
+    "CodeMap": 36.0,
+    "ResCode": 2060100001109.0,
+    "IconCode": 3060100001109.0
+  },
+  {
+    "Code": 607,
+    "Name": "Sứ Giả Thánh Quang",
+    "Catch": 6,
+    "CodeMap": 20.0,
+    "ResCode": 2060100001106.0,
+    "IconCode": 3060100001106.0
+  },
+  {
+    "Code": 608,
+    "Name": "Chim Ưng Cổ",
+    "Catch": 10,
+    "CodeMap": 20.0,
+    "ResCode": 2060100001107.0,
+    "IconCode": 3060100001107.0
+  },
+  {
+    "Code": 609,
+    "Name": "Bạch Kim Thuẫn",
+    "Catch": 10,
+    "CodeMap": 20.0,
+    "ResCode": 2060100001108.0,
+    "IconCode": 3060100001108.0
+  },
+  {
+    "Code": 614,
+    "Name": "Thần Quan Mất Trí",
+    "Catch": 6,
+    "CodeMap": 36.0,
+    "ResCode": 2060100001100.0,
+    "IconCode": 3060100001100.0
+  },
+  {
+    "Code": 615,
+    "Name": "Lợi Trảo Long",
+    "Catch": 9,
+    "CodeMap": 36.0,
+    "ResCode": 2060100001091.0,
+    "IconCode": 3060100001091.0
+  },
+  {
+    "Code": 612,
+    "Name": "Thánh Kiếm",
+    "Catch": 9,
+    "CodeMap": 36.0,
+    "ResCode": 2060100001074.0,
+    "IconCode": 3060100001074.0
+  },
+  {
+    "Code": 625,
+    "Name": "Phù Thủy Hắc Ám 【Lục Tiên Cảnh】",
+    "Catch": 7,
+    "CodeMap": 0.0,
+    "ResCode": 2060100200016.0,
+    "IconCode": 3060100200016.0
+  },
+  {
+    "Code": 671,
+    "Name": "Bát Vị Kê 【Lang Động】",
+    "Catch": 6,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000002.0,
+    "IconCode": 3060100000002.0
+  },
+  {
+    "Code": 729,
+    "Name": "Sứ Giả Băng Tuyết",
+    "Catch": 7,
+    "CodeMap": 43.0,
+    "ResCode": 2060100001120.0,
+    "IconCode": 3060100001120.0
+  },
+  {
+    "Code": 730,
+    "Name": "Người Máy Navi",
+    "Catch": 9,
+    "CodeMap": 43.0,
+    "ResCode": 2060100001122.0,
+    "IconCode": 3060100001122.0
+  },
+  {
+    "Code": 731,
+    "Name": "Tộc Navi",
+    "Catch": 10,
+    "CodeMap": 43.0,
+    "ResCode": 2060100001121.0,
+    "IconCode": 3060100001121.0
+  },
+  {
+    "Code": 732,
+    "Name": "Tinh Linh Cực Quang",
+    "Catch": 9,
+    "CodeMap": 43.0,
+    "ResCode": 2060100001123.0,
+    "IconCode": 3060100001123.0
+  },
+  {
+    "Code": 820,
+    "Name": "Điêu Linh Chiến Sĩ",
+    "Catch": 10,
+    "CodeMap": 55.0,
+    "ResCode": 2060100001111.0,
+    "IconCode": 3060100001111.0
+  },
+  {
+    "Code": 821,
+    "Name": "Điêu Linh Danh Y",
+    "Catch": 10,
+    "CodeMap": 55.0,
+    "ResCode": 2060100001112.0,
+    "IconCode": 3060100001112.0
+  },
+  {
+    "Code": 822,
+    "Name": "Điêu Linh Cung Thủ",
+    "Catch": 10,
+    "CodeMap": 55.0,
+    "ResCode": 2060100001113.0,
+    "IconCode": 3060100001113.0
+  },
+  {
+    "Code": 823,
+    "Name": "Điêu Linh Tiểu Đội Trưởng",
+    "Catch": 11,
+    "CodeMap": 55.0,
+    "ResCode": 2060100001114.0,
+    "IconCode": 3060100001114.0
+  },
+  {
+    "Code": 824,
+    "Name": "Bạo Liệt Long",
+    "Catch": 11,
+    "CodeMap": 56.0,
+    "ResCode": 2060100001115.0,
+    "IconCode": 3060100001115.0
+  },
+  {
+    "Code": 825,
+    "Name": "Người Rơm",
+    "Catch": 9,
+    "CodeMap": 56.0,
+    "ResCode": 2060100001116.0,
+    "IconCode": 3060100001116.0
+  },
+  {
+    "Code": 826,
+    "Name": "Tí Hon Rừng Rậm",
+    "Catch": 9,
+    "CodeMap": 56.0,
+    "ResCode": 2060100001117.0,
+    "IconCode": 3060100001117.0
+  },
+  {
+    "Code": 827,
+    "Name": "Gấu Mật Mị Hoặc",
+    "Catch": 10,
+    "CodeMap": 56.0,
+    "ResCode": 2060100001118.0,
+    "IconCode": 3060100001118.0
+  },
+  {
+    "Code": 852,
+    "Name": "Tiểu Quỷ",
+    "Catch": 2,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000027.0,
+    "IconCode": 3060100000027.0
+  },
+  {
+    "Code": 891,
+    "Name": "Khổng Lồ Lex",
+    "Catch": 9,
+    "CodeMap": 61.0,
+    "ResCode": 2060100200053.0,
+    "IconCode": 3060100200053.0
+  },
+  {
+    "Code": 892,
+    "Name": "Hải Tinh Tử Thần",
+    "Catch": 9,
+    "CodeMap": 61.0,
+    "ResCode": 2060100001130.0,
+    "IconCode": 3060090001130.0
+  },
+  {
+    "Code": 858,
+    "Name": "Hi Thú Phù test",
+    "Catch": 5,
+    "CodeMap": 0.0,
+    "ResCode": 2060100200055.0,
+    "IconCode": 3060100200055.0
+  },
+  {
+    "Code": 893,
+    "Name": "Hiệp Khách Trục Phong",
+    "Catch": 7,
+    "CodeMap": 0.0,
+    "ResCode": 2060100200050.0,
+    "IconCode": 3060100200050.0
+  },
+  {
+    "Code": 904,
+    "Name": "Phù Thủy Đen",
+    "Catch": 10,
+    "CodeMap": 61.0,
+    "ResCode": 2060100001129.0,
+    "IconCode": 3060090001129.0
+  },
+  {
+    "Code": 905,
+    "Name": "Hercules",
+    "Catch": 9,
+    "CodeMap": 61.0,
+    "ResCode": 2060100200056.0,
+    "IconCode": 3060100200056.0
+  },
+  {
+    "Code": 918,
+    "Name": "Nấm Bắt Được",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000016.0,
+    "IconCode": 3060100000016.0
+  },
+  {
+    "Code": 980,
+    "Name": "Xà Yêu Hắc Ám",
+    "Catch": 10,
+    "CodeMap": 67.0,
+    "ResCode": 2060100001139.0,
+    "IconCode": 3060100001139.0
+  },
+  {
+    "Code": 981,
+    "Name": "Thợ Săn Cá Mập",
+    "Catch": 9,
+    "CodeMap": 67.0,
+    "ResCode": 2060100200066.0,
+    "IconCode": 3060100200066.0
+  },
+  {
+    "Code": 982,
+    "Name": "Dơi U Minh",
+    "Catch": 9,
+    "CodeMap": 67.0,
+    "ResCode": 2060100001140.0,
+    "IconCode": 3060100001140.0
+  },
+  {
+    "Code": 983,
+    "Name": "Ếch Độc Đầm Lầy",
+    "Catch": 9,
+    "CodeMap": 67.0,
+    "ResCode": 2060100001141.0,
+    "IconCode": 3060100001141.0
+  },
+  {
+    "Code": 998,
+    "Name": "Tuyết Thú Mã Não",
+    "Catch": 9,
+    "CodeMap": 70.0,
+    "ResCode": 2060100001142.0,
+    "IconCode": 3060100001142.0
+  },
+  {
+    "Code": 999,
+    "Name": "Cáo Đen Tuyết Nguyên",
+    "Catch": 10,
+    "CodeMap": 70.0,
+    "ResCode": 2060100001143.0,
+    "IconCode": 3060100001143.0
+  },
+  {
+    "Code": 1000,
+    "Name": "Thợ Săn Eskimos",
+    "Catch": 9,
+    "CodeMap": 70.0,
+    "ResCode": 2060100001156.0,
+    "IconCode": 3060090001156.0
+  },
+  {
+    "Code": 1001,
+    "Name": "Cơ Giáp Phá Băng Loại 300",
+    "Catch": 9,
+    "CodeMap": 70.0,
+    "ResCode": 2060100001157.0,
+    "IconCode": 3060090001157.0
+  },
+  {
+    "Code": 1114,
+    "Name": "Sylph",
+    "Catch": 11,
+    "CodeMap": 37.0,
+    "ResCode": 2060100200055.0,
+    "IconCode": 3060100200055.0
+  },
+  {
+    "Code": 1115,
+    "Name": "Bàn Thạch Long",
+    "Catch": 12,
+    "CodeMap": 37.0,
+    "ResCode": 2060100200054.0,
+    "IconCode": 3060100200054.0
+  },
+  {
+    "Code": 1116,
+    "Name": "Tung Thạch Giả",
+    "Catch": 10,
+    "CodeMap": 37.0,
+    "ResCode": 2060100200050.0,
+    "IconCode": 3060100200050.0
+  },
+  {
+    "Code": 1117,
+    "Name": "Vong Linh Thuẫn",
+    "Catch": 10,
+    "CodeMap": 37.0,
+    "ResCode": 2060100001149.0,
+    "IconCode": 3060100001149.0
+  },
+  {
+    "Code": 1119,
+    "Name": "Nhện Độc Đỏ",
+    "Catch": 10,
+    "CodeMap": 44.0,
+    "ResCode": 2060100001158.0,
+    "IconCode": 3060100001158.0
+  },
+  {
+    "Code": 1120,
+    "Name": "Hỏa Cơ Giáp",
+    "Catch": 12,
+    "CodeMap": 44.0,
+    "ResCode": 2060100001159.0,
+    "IconCode": 3060100001159.0
+  },
+  {
+    "Code": 1121,
+    "Name": "Thầy Bắt Quỷ",
+    "Catch": 10,
+    "CodeMap": 44.0,
+    "ResCode": 2060100001160.0,
+    "IconCode": 3060100001160.0
+  },
+  {
+    "Code": 1122,
+    "Name": "Ma Thạch Tượng",
+    "Catch": 11,
+    "CodeMap": 44.0,
+    "ResCode": 2060100001161.0,
+    "IconCode": 3060100001161.0
+  },
+  {
+    "Code": 1253,
+    "Name": "Gà Tây May Mắn",
+    "Catch": 1,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000002.0,
+    "IconCode": 3060100000002.0
+  },
+  {
+    "Code": 1323,
+    "Name": "Thỏ Tinh Nghịch",
+    "Catch": 4,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001070.0,
+    "IconCode": 3060100001070.0
+  },
+  {
+    "Code": 1325,
+    "Name": "Cua Kỳ Quái",
+    "Catch": 10,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001171.0,
+    "IconCode": 3060100001171.0
+  },
+  {
+    "Code": 1326,
+    "Name": "Dây Rong",
+    "Catch": 9,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001172.0,
+    "IconCode": 3060100001172.0
+  },
+  {
+    "Code": 1343,
+    "Name": "Thủy Quái Răng Nhọn",
+    "Catch": 12,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001182.0,
+    "IconCode": 3060100001182.0
+  },
+  {
+    "Code": 1342,
+    "Name": "Cốt Cá",
+    "Catch": 11,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001181.0,
+    "IconCode": 3060100001181.0
+  },
+  {
+    "Code": 1339,
+    "Name": "Ma Xà",
+    "Catch": 12,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001178.0,
+    "IconCode": 3060100001178.0
+  },
+  {
+    "Code": 1338,
+    "Name": "Tuần Lộc Mị Ảnh",
+    "Catch": 12,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001177.0,
+    "IconCode": 3060100001177.0
+  },
+  {
+    "Code": 1336,
+    "Name": "Bươm Bướm Xinh",
+    "Catch": 10,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001175.0,
+    "IconCode": 3060100001175.0
+  },
+  {
+    "Code": 1335,
+    "Name": "Chuồn Chuồn Gió",
+    "Catch": 9,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001174.0,
+    "IconCode": 3060100001174.0
+  },
+  {
+    "Code": 2073,
+    "Name": "Thiên Ma Chiến Tướng ",
+    "Catch": 9,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001180.0,
+    "IconCode": 3060100001180.0
+  },
+  {
+    "Code": 2074,
+    "Name": "Ma Nh?n",
+    "Catch": 10,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001108.0,
+    "IconCode": 3060100001108.0
+  },
+  {
+    "Code": 2075,
+    "Name": "Thái Cổ Cự Nhân",
+    "Catch": 12,
+    "CodeMap": 0.0,
+    "ResCode": 2060100200053.0,
+    "IconCode": 3060100200053.0
+  },
+  {
+    "Code": 2076,
+    "Name": "Mãng Xà Thượng Cổ",
+    "Catch": 12,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001178.0,
+    "IconCode": 3060100001178.0
+  },
+  {
+    "Code": 2163,
+    "Name": "Tiểu Đệ Ác Ma Thú",
+    "Catch": 9,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001259.0,
+    "IconCode": 3060100400031.0
+  },
+  {
+    "Code": 2162,
+    "Name": "Ảo Ảnh Tiêu Ác Ma Thú",
+    "Catch": 9,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001259.0,
+    "IconCode": 3060100400031.0
+  },
+  {
+    "Code": 2161,
+    "Name": "Á Cổ Thú",
+    "Catch": 9,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001263.0,
+    "IconCode": 3060100400035.0
+  },
+  {
+    "Code": 2160,
+    "Name": "Ác Hồn Thú",
+    "Catch": 9,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001262.0,
+    "IconCode": 3060100400034.0
+  },
+  {
+    "Code": 2150,
+    "Name": "Chuột Ninja",
+    "Catch": 10,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001267.0,
+    "IconCode": 3060100400039.0
+  },
+  {
+    "Code": 2149,
+    "Name": "Thiên Không Nấm",
+    "Catch": 10,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001266.0,
+    "IconCode": 3060100400038.0
+  },
+  {
+    "Code": 2148,
+    "Name": "Thiên Không Long",
+    "Catch": 12,
+    "CodeMap": 88.0,
+    "ResCode": 2060100001265.0,
+    "IconCode": 3060100400037.0
+  },
+  {
+    "Code": 2147,
+    "Name": "Gấu Kungfu",
+    "Catch": 9,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001264.0,
+    "IconCode": 3060100400036.0
+  },
+  {
+    "Code": 2197,
+    "Name": "Linh Trảo Thú",
+    "Catch": 3,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001143.0,
+    "IconCode": 3060100001143.0
+  },
+  {
+    "Code": 2198,
+    "Name": "Hổ Hư Không",
+    "Catch": 3,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001073.0,
+    "IconCode": 3060100001073.0
+  },
+  {
+    "Code": 2199,
+    "Name": "Lục Dị Linh Hỏa",
+    "Catch": 3,
+    "CodeMap": 0.0,
+    "ResCode": 2060100001059.0,
+    "IconCode": 3060100001059.0
+  },
+  {
+    "Code": 2200,
+    "Name": "Gấu Đại Địa",
+    "Catch": 3,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000025.0,
+    "IconCode": 3060100000025.0
+  },
+  {
+    "Code": 2201,
+    "Name": "Ma Linh Tử",
+    "Catch": 3,
+    "CodeMap": 0.0,
+    "ResCode": 2060100000053.0,
+    "IconCode": 3060100000053.0
+  }
+]

@@ -1,0 +1,25 @@
+event:L_ITT|2413|Sách Dạy Nấu Hamburger
+event:L_ITT|2440|Sách Dạy Nấu Sushi Tôm
+event:L_ITT|2441|Sách Dạy Nấu Khoai Tây Chiên
+event:L_ITT|2442|Sách Dạy Nấu Mì Chan Canh Đặc
+event:L_ITT|2444|Sách Dạy Nấu Cá Thơm Nấu Thịt
+event:L_ITT|2446|Sách Dạy Nấu Nem
+event:L_ITT|2452|Sách Dạy Nấu Hamburger Lớn
+event:L_ITT|2447|Sách Dạy Nấu Toàn Gia Phúc
+event:L_ITT|2443|Sách Dạy Nấu Mì Bò Lớn
+event:L_ITT|2445|Sách Dạy Nấu Mì Bò Siêu Cấp
+event:L_ITT|2448|Sách Dạy Nấu Hải Sản Xào
+event:L_ITT|2450|Sách Dạy Nấu Canh Ngũ Đậu
+event:L_ITT|2455|Sách Dạy Nấu Hamburger Siêu Cấp
+event:L_ITT|2456|Sách Dạy Nấu Canh Cải Thảo
+event:L_ITT|2457|Sách Dạy Nấu Cá Trích Chiên Giòn
+event:L_ITT|2458|Sách Dạy Nấu Cơm Chiên Củ Cải
+event:L_ITT|2466|Công Thức Ma Huyết Hoàn
+event:L_ITT|2465|Công Thức Cam Lâm Lộ
+event:L_ITT|2467|Công Thức Kỳ Tích Thủy
+event:L_ITT|2469|Công Thức Nguyệt Lượng Thủy
+event:L_ITT|2468|Công Thức Thái Dương Thủy
+event:L_ITT|2470|Công Thức Minh Tinh Dược Thủy
+event:L_ITT|2471|Công Thức Ma Năng Dược Tễ
+event:L_ITT|2472|Công Thức Thiên Hương Hoàn
+event:L_ITT|2473|Công Thức Đậu Khấu Lộ

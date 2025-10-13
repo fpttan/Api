@@ -1,0 +1,8 @@
+event:L_ITT|1|Thuốc Viên Bổ Máu
+event:L_ITT|158|Thuốc Viên Hồi Lực
+event:L_ITT|126|Pháp Lực Đơn
+event:L_ITT|4|Thuốc Nước Bổ Máu
+event:L_ITT|125|Thuốc Nước Bổ Lực
+event:L_ITT|110|Cầu Mệnh Đơn
+event:L_ITT|370|Pháp Thần Thánh Dược
+event:L_ITT|371|Chiến Thần Thánh Dược

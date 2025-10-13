@@ -1,0 +1,7 @@
+event:L_ITT|1724|Quang Hợp
+event:L_ITT|1646|Chí Mệnh Xúc Giác
+event:L_ITT|427|Cao Cấp Thủy Dược
+event:L_ITT|425|Đê Cấp Thủy Dược
+event:L_ITT|426|Trung Cấp Thủy Dược
+event:L_ITT|1534|Thọ Mệnh Đan Cao Cấp
+event:L_ITT|1533|Thọ Mệnh Đan

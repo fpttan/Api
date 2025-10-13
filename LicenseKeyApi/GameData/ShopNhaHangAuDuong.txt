@@ -1,0 +1,9 @@
+event:L_ITT|262|Cá Thơm Nấu Thịt Thái Chỉ
+event:L_ITT|268|Sườn Bò
+event:L_ITT|261|Mì Bò
+event:L_ITT|259|Hamburger
+event:L_ITT|260|Mì Chan Canh Đặc
+event:L_ITT|264|Sushi
+event:L_ITT|265|Nem
+event:L_ITT|105|Khoai Tây Chiên
+event:L_ITT|267|Cơm Chân Gà

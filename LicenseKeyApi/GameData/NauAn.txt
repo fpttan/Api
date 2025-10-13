@@ -1,0 +1,28 @@
+event:L_ITT|380|Sushi Tôm|lv1
+event:L_ITT|374|Hamburger Lớn|lv1
+event:L_ITT|269|Toàn Gia Phúc|lv2
+event:L_ITT|376|Mì Bò Lớn|lv2
+event:L_ITT|377|Mì Bò Siêu Cấp|lv2
+event:L_ITT|1638|Hải Sản Xào Toàn Gia Phúc|lv2
+event:L_ITT|383|Canh Ngũ Đậu|lv2
+event:L_ITT|375|Hamburger Siêu Cấp|lv2
+event:L_ITT|2415|Canh Cải Thảo|lv3
+event:L_ITT|2416|Cá Trích Chiên Giòn|lv3
+event:L_ITT|2417|Cơm Chiên Củ Cải|lv3
+event:L_ITT|2418|Thịt Xào|lv4
+event:L_ITT|2419|Canh Thập Cẩm|lv4
+event:L_ITT|2420|Xúc Xích Loại 1|lv4
+event:L_ITT|2421|Rượu Nếp|lv5
+event:L_ITT|2422|Trứng Cá Đuối|lv5
+event:L_ITT|2423|Kẹo Cà Phê|lv5
+event:L_ITT|2424|Xúc Xích Loại 2|lv5
+event:L_ITT|2541|Canh Xuất Thần|lv5
+event:L_ITT|2664|Cá Vược Tẩm Mật|lv5
+event:L_ITT|2665|Cá Lóc Chưng Rượu|lv5
+event:L_ITT|2666|Cá Sốt Cacao|lv5
+event:L_ITT|2566|Hải Sản Hấp|lv6
+event:L_ITT|2565|Canh Cá Hầm Bầu|lv6
+event:L_ITT|2563|Cá Lóc Hấp Mướp|lv6
+event:L_ITT|2562|Lẩu Hải Sản|lv6
+event:L_ITT|2703|Canh Mướp Cá Tuyết|lv6
+event:L_ITT|2714|Canh Cá Thập Cẩm|lv6

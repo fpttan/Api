@@ -1,0 +1,10 @@
+event:L_IT|124079670|Bàn Thạch Ấn Chương
+event:L_IT|124079720|Tân Nguyệt Ấn Chương
+event:L_IT|124079675|Hành Giả Tượng
+event:L_IT|124079702|Hiền Giả Tượng
+event:L_IT|124079684|Mê Thất Kính
+event:L_IT|124079719|Hư Không Kính
+event:L_IT|124079688|Thủy Tinh La Bàn
+event:L_IT|124079698|Vô Tượng La Bàn
+event:L_IT|124079686|Hư Không Châm
+event:L_IT|124079320|Thiên Tinh Châm

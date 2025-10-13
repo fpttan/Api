@@ -1,0 +1,794 @@
+[
+  {
+    "Code": 1,
+    "Name": "Xuất Vân Thôn"
+  },
+  {
+    "Code": 2,
+    "Name": "Đông Xuất Vân"
+  },
+  {
+    "Code": 3,
+    "Name": "Vân Đài"
+  },
+  {
+    "Code": 4,
+    "Name": "Thiện Tĩnh Địa"
+  },
+  {
+    "Code": 5,
+    "Name": "Lê Dương Thôn"
+  },
+  {
+    "Code": 6,
+    "Name": "Lê Dương Nam"
+  },
+  {
+    "Code": 7,
+    "Name": "Quân Cổ Đạo"
+  },
+  {
+    "Code": 8,
+    "Name": "Tháp Khắc Nguyên"
+  },
+  {
+    "Code": 9,
+    "Name": "Đông Huyền Thành"
+  },
+  {
+    "Code": 10,
+    "Name": "Tinh Linh Thành"
+  },
+  {
+    "Code": 11,
+    "Name": "Linh Vũ Tộc"
+  },
+  {
+    "Code": 12,
+    "Name": "Bàn Địa Tộc"
+  },
+  {
+    "Code": 13,
+    "Name": "Liêu Vân Tộc"
+  },
+  {
+    "Code": 14,
+    "Name": "Hư Không Mạc"
+  },
+  {
+    "Code": 15,
+    "Name": "Lê Dương Bắc"
+  },
+  {
+    "Code": 16,
+    "Name": "Ngọc Phong Lâm"
+  },
+  {
+    "Code": 17,
+    "Name": "Lê Dương Đảo"
+  },
+  {
+    "Code": 18,
+    "Name": "Kỳ Thạch Địa"
+  },
+  {
+    "Code": 19,
+    "Name": "Linh Lan"
+  },
+  {
+    "Code": 21,
+    "Name": "Chỉ Phong Cốc"
+  },
+  {
+    "Code": 22,
+    "Name": "Tuyết Lâm"
+  },
+  {
+    "Code": 25,
+    "Name": "Lưu Hỏa Tộc"
+  },
+  {
+    "Code": 26,
+    "Name": "Quang Bình Nguyên"
+  },
+  {
+    "Code": 27,
+    "Name": "Trầm Thụy Lâm"
+  },
+  {
+    "Code": 28,
+    "Name": "Vân Lộc Sơn"
+  },
+  {
+    "Code": 31,
+    "Name": "Tiên Lạp Thành"
+  },
+  {
+    "Code": 32,
+    "Name": "Thiên Khung Tộc"
+  },
+  {
+    "Code": 33,
+    "Name": "Lạp Tuyết Địa"
+  },
+  {
+    "Code": 34,
+    "Name": "Anh Vũ Cảnh"
+  },
+  {
+    "Code": 55,
+    "Name": "Điêu Linh Thôn"
+  },
+  {
+    "Code": 101,
+    "Name": "Đấu Trường Đoạt Bảo"
+  },
+  {
+    "Code": 38,
+    "Name": "Bàng Bối Thành"
+  },
+  {
+    "Code": 39,
+    "Name": "Huyền Lâm Tộc"
+  },
+  {
+    "Code": 40,
+    "Name": "Thiên Lục Châu"
+  },
+  {
+    "Code": 41,
+    "Name": "Kỵ Bình Nguyên"
+  },
+  {
+    "Code": 102,
+    "Name": "Nơi Thi Câu Cá"
+  },
+  {
+    "Code": 71,
+    "Name": "Thiên Đường Thần Thánh"
+  },
+  {
+    "Code": 42,
+    "Name": "Cổ Đạo"
+  },
+  {
+    "Code": 2000,
+    "Name": "Cạnh Kỹ Trường"
+  },
+  {
+    "Code": 2001,
+    "Name": "Tầng 1 Mê Huyễn Động"
+  },
+  {
+    "Code": 500,
+    "Name": "Tầng 1 Kho Báu Đại Mạc"
+  },
+  {
+    "Code": 501,
+    "Name": "Tầng 2 Kho Báu Đại Mạc"
+  },
+  {
+    "Code": 502,
+    "Name": "Tầng 3 Kho Báu Đại Mạc"
+  },
+  {
+    "Code": 503,
+    "Name": "Tầng 4 Kho Báu Đại Mạc"
+  },
+  {
+    "Code": 504,
+    "Name": "Tầng 5 Kho Báu Đại Mạc"
+  },
+  {
+    "Code": 140105,
+    "Name": "Mật Đạo 2"
+  },
+  {
+    "Code": 140106,
+    "Name": "Mật Đạo 1"
+  },
+  {
+    "Code": 2002,
+    "Name": "Tầng 2 Mê Huyễn Động"
+  },
+  {
+    "Code": 29,
+    "Name": "Mê Quang Tự"
+  },
+  {
+    "Code": 23,
+    "Name": "Phục Ma Cốc"
+  },
+  {
+    "Code": 37,
+    "Name": "Cổ Thành"
+  },
+  {
+    "Code": 24,
+    "Name": "Hộ Chi Địa"
+  },
+  {
+    "Code": 51,
+    "Name": "Bảo Tàng Mật Thất"
+  },
+  {
+    "Code": 52,
+    "Name": "Tầng 50 Trấn Ma Tháp"
+  },
+  {
+    "Code": 49,
+    "Name": "Bang Hội"
+  },
+  {
+    "Code": 50,
+    "Name": "Khoáng Động"
+  },
+  {
+    "Code": 43,
+    "Name": "Đoạn Cốc"
+  },
+  {
+    "Code": 45,
+    "Name": "Tử Mộng Cảnh"
+  },
+  {
+    "Code": 48,
+    "Name": "Trấn Ma Tháp"
+  },
+  {
+    "Code": 46,
+    "Name": "Kiếm Hồn Cảnh"
+  },
+  {
+    "Code": 36,
+    "Name": "Thần Di Cảnh"
+  },
+  {
+    "Code": 20,
+    "Name": "Thánh Ước Địa"
+  },
+  {
+    "Code": 30,
+    "Name": "Quyến Cố Thành"
+  },
+  {
+    "Code": 505,
+    "Name": "Tầng 1 Lục Tiên Cảnh"
+  },
+  {
+    "Code": 506,
+    "Name": "Tầng 2 Lục Tiên Cảnh"
+  },
+  {
+    "Code": 507,
+    "Name": "Tầng 3 Lục Tiên Cảnh"
+  },
+  {
+    "Code": 508,
+    "Name": "Tầng 4 Lục Tiên Cảnh"
+  },
+  {
+    "Code": 509,
+    "Name": "Tầng 5 Lục Tiên Cảnh"
+  },
+  {
+    "Code": 47,
+    "Name": "Không Gian Ma Chiến"
+  },
+  {
+    "Code": 510,
+    "Name": "Tầng 1 Lang Huyệt Động"
+  },
+  {
+    "Code": 511,
+    "Name": "Tầng 2 Lang Huyệt Động"
+  },
+  {
+    "Code": 512,
+    "Name": "Tầng 3 Lang Huyệt Động"
+  },
+  {
+    "Code": 513,
+    "Name": "Tầng 3 Lang Huyệt Động"
+  },
+  {
+    "Code": 514,
+    "Name": "Tầng 4 Lang Huyệt Động"
+  },
+  {
+    "Code": 53,
+    "Name": "Tân Tuyết Địa"
+  },
+  {
+    "Code": 44,
+    "Name": "Đăng Vân Địa"
+  },
+  {
+    "Code": 140104,
+    "Name": "Mật Đạo 3"
+  },
+  {
+    "Code": 54,
+    "Name": "Chiến Trường Bang Hội"
+  },
+  {
+    "Code": 515,
+    "Name": "Ảo Ma Tháp"
+  },
+  {
+    "Code": 56,
+    "Name": "Mị Hoặc Lâm"
+  },
+  {
+    "Code": 35,
+    "Name": "Băng Tuyết Nguyên"
+  },
+  {
+    "Code": 517,
+    "Name": "Tầng 1 Liệt Diễm Thâm Uyên"
+  },
+  {
+    "Code": 518,
+    "Name": "Tầng 2 Liệt Diễm Thâm Uyên"
+  },
+  {
+    "Code": 519,
+    "Name": "Tầng 3 Liệt Diễm Thâm Uyên"
+  },
+  {
+    "Code": 520,
+    "Name": "Tầng 4 Liệt Diễm Thâm Uyên"
+  },
+  {
+    "Code": 516,
+    "Name": "Tầng 1 Không Gian Đa Chiều"
+  },
+  {
+    "Code": 57,
+    "Name": "Nông Trường Số 1"
+  },
+  {
+    "Code": 59,
+    "Name": "Giác Đấu Đông Huyền"
+  },
+  {
+    "Code": 58,
+    "Name": "Nông Trường Số 2"
+  },
+  {
+    "Code": 61,
+    "Name": "Tử Tức Đảo"
+  },
+  {
+    "Code": 60,
+    "Name": "Chiến Trường Achilles"
+  },
+  {
+    "Code": 63,
+    "Name": "Lễ Đường Hôn Lễ Cao Cấp"
+  },
+  {
+    "Code": 62,
+    "Name": "Bản đồ mới ++2"
+  },
+  {
+    "Code": 64,
+    "Name": "Lễ Đường Hôn Lễ Thông Thường"
+  },
+  {
+    "Code": 65,
+    "Name": "Lễ Đường Hôn Lễ Quý Giá"
+  },
+  {
+    "Code": 66,
+    "Name": "Khu Hoang Mạc"
+  },
+  {
+    "Code": 67,
+    "Name": "Vĩnh Dạ Cảng"
+  },
+  {
+    "Code": 68,
+    "Name": "Phong Bạo Cốc"
+  },
+  {
+    "Code": 69,
+    "Name": "Phụ Bản Quỷ Hút Máu"
+  },
+  {
+    "Code": 70,
+    "Name": "Mã Thạch Tuyết"
+  },
+  {
+    "Code": 72,
+    "Name": "Đấu Trường Bánh Kem"
+  },
+  {
+    "Code": 2004,
+    "Name": "Tầng 4 Mê Huyễn Động"
+  },
+  {
+    "Code": 2003,
+    "Name": "Tầng 3 Mê Huyễn Động"
+  },
+  {
+    "Code": 521,
+    "Name": "Tầng 1 Thế Giới Hải Dương"
+  },
+  {
+    "Code": 522,
+    "Name": "Tầng 2 Thế Giới Hải Dương"
+  },
+  {
+    "Code": 523,
+    "Name": "Tầng 3 Thế Giới Hải Dương"
+  },
+  {
+    "Code": 524,
+    "Name": "Tầng 4 Thế Giới Hải Dương"
+  },
+  {
+    "Code": 525,
+    "Name": "Thành Phố Chìm"
+  },
+  {
+    "Code": 526,
+    "Name": "Quỷ Môn Quan"
+  },
+  {
+    "Code": 527,
+    "Name": "Học Viện Đông Huyền"
+  },
+  {
+    "Code": 528,
+    "Name": "Đảo Thần Bí"
+  },
+  {
+    "Code": 2005,
+    "Name": "Chu Ma Điện"
+  },
+  {
+    "Code": 529,
+    "Name": "Đông Võ Đài Đông Huyền"
+  },
+  {
+    "Code": 530,
+    "Name": "Tây Võ Đài Đông Huyền"
+  },
+  {
+    "Code": 2006,
+    "Name": "Địa Ngục Dung Nham"
+  },
+  {
+    "Code": 73,
+    "Name": "Chiến Trường Dũng Sĩ"
+  },
+  {
+    "Code": 531,
+    "Name": "Tầng 5 Thế Giới Hải Dương"
+  },
+  {
+    "Code": 2010,
+    "Name": "Tầng 1 Sào Huyệt Cương Thi"
+  },
+  {
+    "Code": 2007,
+    "Name": "Mê Trận"
+  },
+  {
+    "Code": 2008,
+    "Name": "Mê Trận"
+  },
+  {
+    "Code": 2009,
+    "Name": "Mê Trận"
+  },
+  {
+    "Code": 2011,
+    "Name": "Tầng 2 Sào Huyệt Cương Thi"
+  },
+  {
+    "Code": 2012,
+    "Name": "Tầng 3 Sào Huyệt Cương Thi"
+  },
+  {
+    "Code": 2015,
+    "Name": "Chiến Trường Vĩnh Dạ"
+  },
+  {
+    "Code": 2014,
+    "Name": "Vân Đài Trong Mộng"
+  },
+  {
+    "Code": 2013,
+    "Name": "Xuất Vân Trong Mộng"
+  },
+  {
+    "Code": 532,
+    "Name": "Hội Trường Phân Chia"
+  },
+  {
+    "Code": 75,
+    "Name": "Đấu Trường Tranh Bá"
+  },
+  {
+    "Code": 533,
+    "Name": "Ký Ức Tinh Linh Thành"
+  },
+  {
+    "Code": 534,
+    "Name": "Sào Huyệt Vua Người Tuyết"
+  },
+  {
+    "Code": 557,
+    "Name": "Ào Cảnh Tầng 20"
+  },
+  {
+    "Code": 556,
+    "Name": "Ào Cảnh Tầng 19"
+  },
+  {
+    "Code": 555,
+    "Name": "Ào Cảnh Tầng 18"
+  },
+  {
+    "Code": 554,
+    "Name": "Ào Cảnh Tầng 17"
+  },
+  {
+    "Code": 553,
+    "Name": "Ào Cảnh Tầng 16"
+  },
+  {
+    "Code": 552,
+    "Name": "Ào Cảnh Tầng 15"
+  },
+  {
+    "Code": 551,
+    "Name": "Ào Cảnh Tầng 14"
+  },
+  {
+    "Code": 550,
+    "Name": "Ào Cảnh Tầng 13"
+  },
+  {
+    "Code": 549,
+    "Name": "Ào Cảnh Tầng 12"
+  },
+  {
+    "Code": 548,
+    "Name": "Ào Cảnh Tầng 11"
+  },
+  {
+    "Code": 547,
+    "Name": "Ào Cảnh Tầng 10"
+  },
+  {
+    "Code": 546,
+    "Name": "Ào Cảnh Tầng 9"
+  },
+  {
+    "Code": 545,
+    "Name": "Ào Cảnh Tầng 8"
+  },
+  {
+    "Code": 544,
+    "Name": "Ào Cảnh Tầng 7"
+  },
+  {
+    "Code": 543,
+    "Name": "Ào Cảnh Tầng 6"
+  },
+  {
+    "Code": 542,
+    "Name": "Ào Cảnh Tầng 5"
+  },
+  {
+    "Code": 541,
+    "Name": "Ào Cảnh Tầng 4"
+  },
+  {
+    "Code": 540,
+    "Name": "Ào Cảnh Tầng 3"
+  },
+  {
+    "Code": 539,
+    "Name": "Ào Cảnh Tầng 2"
+  },
+  {
+    "Code": 538,
+    "Name": "Ào Cảnh Tầng 1"
+  },
+  {
+    "Code": 537,
+    "Name": "Phòng Chờ 3"
+  },
+  {
+    "Code": 536,
+    "Name": "Phòng Chờ 2"
+  },
+  {
+    "Code": 535,
+    "Name": "Phòng Chờ 1"
+  },
+  {
+    "Code": 77,
+    "Name": "Phòng Trò Chuyện"
+  },
+  {
+    "Code": 76,
+    "Name": "Quảng Trường Kỳ Thạch"
+  },
+  {
+    "Code": 576,
+    "Name": "Tầng 15 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 575,
+    "Name": "Tầng 14 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 574,
+    "Name": "Tầng 13 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 573,
+    "Name": "Tầng 12 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 572,
+    "Name": "Tầng 11 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 571,
+    "Name": "Tầng 10 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 570,
+    "Name": "Tầng 9 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 569,
+    "Name": "Tầng 8 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 568,
+    "Name": "Tầng 7 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 567,
+    "Name": "Tầng 6 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 566,
+    "Name": "Tầng 5 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 565,
+    "Name": "Tầng 4 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 564,
+    "Name": "Tầng 3 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 563,
+    "Name": "Tầng 2 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 562,
+    "Name": "Tầng 1 Không Gian Mê Đồ"
+  },
+  {
+    "Code": 561,
+    "Name": "Không Gian Dũng Khí"
+  },
+  {
+    "Code": 560,
+    "Name": "Không Gian Vận Mệnh"
+  },
+  {
+    "Code": 559,
+    "Name": "Không Gian Tín Niệm"
+  },
+  {
+    "Code": 558,
+    "Name": "Không Gian Luân Hồi"
+  },
+  {
+    "Code": 78,
+    "Name": "Chiến Trường Tula"
+  },
+  {
+    "Code": 577,
+    "Name": "Tầng 2 Không Gian Đa Chiều"
+  },
+  {
+    "Code": 87,
+    "Name": "Ảo Địa Tiêu Trừ"
+  },
+  {
+    "Code": 86,
+    "Name": "Hành Lang Vô Tận  - Luân Hồi"
+  },
+  {
+    "Code": 85,
+    "Name": "Hành Lang Vô Tận  - Thâm Uyên"
+  },
+  {
+    "Code": 84,
+    "Name": "Hành Lang Vô Tận  - Địa Ngục"
+  },
+  {
+    "Code": 83,
+    "Name": "Hành Lang Vô Tận  - Đoạn Không"
+  },
+  {
+    "Code": 82,
+    "Name": "Hành Lang Vô Tận  - Quyết Định"
+  },
+  {
+    "Code": 81,
+    "Name": "Hành Lang Vô Tận  - Băng Lửa"
+  },
+  {
+    "Code": 80,
+    "Name": "Hành Lang Vô Tận  - Hỏa Diệm"
+  },
+  {
+    "Code": 79,
+    "Name": "Hành Lang Vô Tận  - Khởi Trình"
+  },
+  {
+    "Code": 110,
+    "Name": "Huyết Sắc Cổ Bích"
+  },
+  {
+    "Code": 580,
+    "Name": "Ác Ma Đảo"
+  },
+  {
+    "Code": 579,
+    "Name": "Thế Giới Chân Lý"
+  },
+  {
+    "Code": 578,
+    "Name": "Rừng Rậm Số"
+  },
+  {
+    "Code": 88,
+    "Name": "Thiên Không Thành"
+  },
+  {
+    "Code": 581,
+    "Name": "Hàng Lang Nguyên Tố"
+  },
+  {
+    "Code": 582,
+    "Name": "Vùng Đất Cạm Bẫy"
+  },
+  {
+    "Code": 583,
+    "Name": "Không Gian Bí Mật"
+  },
+  {
+    "Code": 584,
+    "Name": "Hành Lang Nguy Hiểm"
+  },
+  {
+    "Code": 585,
+    "Name": "Tiểu Đảo Cô Lập"
+  },
+  {
+    "Code": 586,
+    "Name": "Tháp Trí Tuệ"
+  },
+  {
+    "Code": 587,
+    "Name": "Không Gian Tĩnh Mịch"
+  },
+  {
+    "Code": 588,
+    "Name": "Thủ Vệ Viễn Cổ"
+  }
+]

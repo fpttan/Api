@@ -1,0 +1,5 @@
+event:L_ITT|789|Kẹp Bắt Thú
+event:L_ITT|2391|Bột Mì
+event:L_ITT|2273|Rương Tiền (10 triệu)
+event:L_ITT|2272|Rương Tiền (1 triệu)
+event:L_ITT|2271|Rương Tiền (100000)

@@ -1,0 +1,21 @@
+event:L_ITT|2426|Cam Lâm Lộ
+event:L_ITT|2425|Ma Huyết Hoàn
+event:L_ITT|2427|Kỳ Tích Thủy
+event:L_ITT|2428|Thái Dương Thủy
+event:L_ITT|2429|Nguyệt Lượng Thủy
+event:L_ITT|2430|Minh Tinh Dược Thủy
+event:L_ITT|2431|Ma Năng Dược Tễ
+event:L_ITT|2432|Thiên Hương Hoàn
+event:L_ITT|2433|Đậu Khấu Lộ
+event:L_ITT|2434|Tứ Phương Linh Động Hoàn
+event:L_ITT|2435|Khu Thiên Tán
+event:L_ITT|2436|Cách Địa Hương
+event:L_ITT|2437|Truy Huyết Đan
+event:L_ITT|2438|Thiết Bì Phong Tinh
+event:L_ITT|2439|Cửu Hoa Ngọc Lộ
+event:L_ITT|2570|Hỏa Linh Dược Hoàn
+event:L_ITT|2567|Thiên Tinh Dược Hoàn
+event:L_ITT|2681|Lan Bác Dược Tễ
+event:L_ITT|2684|Thổ Tân Ma Hoàn
+event:L_ITT|2682|Ma Tính Thạch Dung Thủy
+event:L_ITT|2439|Cửu Hoa Ngọc Lộ

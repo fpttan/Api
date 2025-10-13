@@ -3,8 +3,35 @@
   "WorkspaceRootPath": "E:\\Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\licensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\licensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\license.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\license.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\licensedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\licensedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\apikeymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\apikeymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|e:\\api\\licensekeyapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9FE376A9-2F1B-776A-5FCB-4A9227A38782}|LicenseKeyApi\\LicenseKeyApi.csproj|solutionrelative:licensekeyapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +41,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAO4UAAAAAAAAAAAEwBMVAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-08T08:51:57.246Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\FileController.cs",
+              "RelativeDocumentMoniker": "LicenseKeyApi\\FileController.cs",
+              "ToolTip": "E:\\Api\\LicenseKeyApi\\FileController.cs",
+              "RelativeToolTip": "LicenseKeyApi\\FileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T08:04:48.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LicenseDbContext.cs",
+              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\LicenseDbContext.cs",
+              "RelativeDocumentMoniker": "LicenseKeyApi\\LicenseDbContext.cs",
+              "ToolTip": "E:\\Api\\LicenseKeyApi\\LicenseDbContext.cs",
+              "RelativeToolTip": "LicenseKeyApi\\LicenseDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T02:42:15.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\Program.cs",
+              "RelativeDocumentMoniker": "LicenseKeyApi\\Program.cs",
+              "ToolTip": "E:\\Api\\LicenseKeyApi\\Program.cs",
+              "RelativeToolTip": "LicenseKeyApi\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T02:54:47.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "License.cs",
+              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\License.cs",
+              "RelativeDocumentMoniker": "LicenseKeyApi\\License.cs",
+              "ToolTip": "E:\\Api\\LicenseKeyApi\\License.cs",
+              "RelativeToolTip": "LicenseKeyApi\\License.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T02:54:35.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": ".gitignore",
+              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\.gitignore",
+              "RelativeDocumentMoniker": "LicenseKeyApi\\.gitignore",
+              "ToolTip": "E:\\Api\\LicenseKeyApi\\.gitignore",
+              "RelativeToolTip": "LicenseKeyApi\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-29T02:54:02.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiKeyMiddleware.cs",
+              "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\ApiKeyMiddleware.cs",
+              "RelativeDocumentMoniker": "LicenseKeyApi\\ApiKeyMiddleware.cs",
+              "ToolTip": "E:\\Api\\LicenseKeyApi\\ApiKeyMiddleware.cs",
+              "RelativeToolTip": "LicenseKeyApi\\ApiKeyMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T02:53:14.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "LicenseController.cs",
               "DocumentMoniker": "E:\\Api\\LicenseKeyApi\\LicenseController.cs",
               "RelativeDocumentMoniker": "LicenseKeyApi\\LicenseController.cs",
               "ToolTip": "E:\\Api\\LicenseKeyApi\\LicenseController.cs",
               "RelativeToolTip": "LicenseKeyApi\\LicenseController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAuwIIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowC4AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T16:03:36.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T16:03:36.142Z"
             }
           ]
         }

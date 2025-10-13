@@ -1,0 +1,4 @@
+event:L_ITT|113|Sinh Mệnh Hoàn
+event:L_ITT|322|Pháp Lực Thánh Dược
+event:L_ITT|127|Pháp Lực Hoàn
+event:L_ITT|321|Hồi Huyết Thánh Dược

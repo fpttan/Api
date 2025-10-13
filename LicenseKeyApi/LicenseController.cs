@@ -29,15 +29,50 @@ public class LicenseController : ControllerBase
     {
         var license = _context.Licenses.Find(key);
         if (license == null) return NotFound();
-
+        // Tạo anonymous object chỉ chứa các trường cần thiết
+        var licenseInfo = new
+        {
+            LicenseKey = license.LicenseKey,
+            Name = license.Name,
+            TimeExpireDaily = license.TimeExpireDaily,
+            TimeExpire200v = license.TimeExpire200v,
+            Multiversion = license.Multiversion
+        };
         // Serialize object JSON
-        var jsonData = System.Text.Json.JsonSerializer.Serialize(license);
+        var jsonData = System.Text.Json.JsonSerializer.Serialize(licenseInfo);
 
         // Mã hóa AES
         var encryptedLicense = EncryptData(jsonData, out string ivBase64);
 
         return Ok(new { data = encryptedLicense, data2 = ivBase64 });
     }
+
+    [HttpGet("tool")]
+    public IActionResult GetLicenseTool([FromQuery] string key)
+    {
+        if (string.IsNullOrEmpty(key))
+        {
+            return BadRequest("Vui lòng cung cấp LicenseKey.");
+        }
+
+        var license = _context.Licenses.Find(key);
+        if (license == null) return NotFound();
+        // Tạo anonymous object chỉ chứa các trường cần thiết
+        var licenseInfo = new
+        {
+            LicenseKey = license.LicenseKey,
+            Name = license.Name,
+            TimeExpireTool = license.TimeExpireTool,
+        };
+        // Serialize object JSON
+        var jsonData = System.Text.Json.JsonSerializer.Serialize(licenseInfo);
+
+        // Mã hóa AES
+        var encryptedLicense = EncryptData(jsonData, out string ivBase64);
+
+        return Ok(new { data = encryptedLicense, data2 = ivBase64 });
+    }
+
 
     private static string EncryptData(string plainText, out string ivBase64)
     {
@@ -65,7 +100,6 @@ public class LicenseController : ControllerBase
         }
         return bytes;
     }
-
     // ✅ Thêm License mới (Chỉ Admin có quyền)
     [HttpPost]
     public IActionResult AddLicense([FromHeader(Name = "X-API-KEY")] string apiKey, [FromBody] License license)
@@ -94,8 +128,6 @@ public class LicenseController : ControllerBase
             return StatusCode(500, new { error = ex.Message });
         }
     }
-    
-
     // ✅ Cập nhật License (Chỉ Admin có quyền)
     [HttpPut("updatelicense")]
     public IActionResult UpdateLicense([FromHeader(Name = "X-API-KEY")] string apiKey,  [FromBody] License updatedLicense)
@@ -123,7 +155,6 @@ public class LicenseController : ControllerBase
         _context.SaveChanges();
         return Ok(license);
         }
-
     // Hàm kiểm tra định dạng ngày tháng
     private bool IsValidDateFormat(string date)
     {
@@ -138,7 +169,6 @@ public class LicenseController : ControllerBase
     {
         return !string.IsNullOrWhiteSpace(multi) && bool.TryParse(multi, out _);
     }
-
     // ✅ Xóa License (Chỉ Admin có quyền)
     [HttpDelete("{licenseKey}")]
     public IActionResult DeleteLicense([FromHeader(Name = "X-API-KEY")] string apiKey, string licenseKey)

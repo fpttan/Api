@@ -1,0 +1,10 @@
+event:L_ITT|16|Toái Liệt Mệnh Thạch
+event:L_ITT|35|Toái Liệt Trí Thạch
+event:L_ITT|42|Toái Liệt Lực Thạch
+event:L_ITT|28|Toái Liệt Thần Thạch
+event:L_ITT|3|Toái Liệt Xảo Thạch
+event:L_IT|3|Tiền Cổ
+event:L_IT|8|Tiền Đồng Cổ
+event:L_IT|16|Tiền Bạc Cổ
+event:L_IT|22|Tiền Vàng Cổ
+event:L_IT|36|Kim Cương Cổ

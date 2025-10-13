@@ -1,0 +1,24 @@
+event:L_EQT|1472|Tâm Linh Chế
+event:L_EQT|1482|Lục Sắc Chướng
+event:L_EQT|1492|Hắc Ám Bão
+event:L_EQT|1477|Dã Nguyên Tính
+event:L_EQT|1487|Tinh Chuẩn Binh Khí
+event:L_EQT|1497|Long Linh Hộ
+event:L_EQT|1503|Bảo Liên Tâm
+event:L_EQT|1513|Chu Viêm Huyền Nguyệt
+event:L_EQT|1523|Huyền Dực Lưu Thi
+event:L_EQT|1533|Bộc Liệt Tinh Hoàng
+event:L_EQT|1543|Thiết Phong Lợi Ngự
+event:L_EQT|1553|Thiên Mệnh Tý Hộ
+event:L_EQT|1563|Thanh Cúc Chướng
+event:L_EQT|1573|Linh Mỹ Ảo
+event:L_EQT|1583|Thiên Củng Nguyệt
+event:L_EQT|1593|Thương Ma Khấp
+event:L_EQT|1603|Phong Tình Lương Dịch
+event:L_EQT|1613|Long Lân Dực Ấn
+event:L_EQT|1649|Thiết Đế Uy
+event:L_EQT|1665|Tuyền Phong Nhãn
+event:L_EQT|1683|Yêu Lan Hoặc
+event:L_EQT|1809|Duyệt Nhĩ Hồn
+event:L_EQT|1819|Nghịch Lân Hộ
+event:L_EQT|1855|Tinh Linh Luân

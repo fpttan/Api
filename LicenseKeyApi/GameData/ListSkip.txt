@@ -1,0 +1,11 @@
+event:L_M|792|Tinh Anh Thiên Khung
+event:L_M|793|Tinh Anh Huyền Lâm
+event:L_M|794|Tinh Anh Lưu Hỏa
+event:L_M|794|Tinh Anh Bàn Địa
+event:L_M|794|Tinh Anh Liêu Vân
+event:L_M|794|Tinh Anh Linh Vũ
+event:L_M|477|Phản Quân Đại Tướng
+event:L_M|775|Phi Tặc
+event:L_M|837|Phi Ma Thủ Lĩnh
+event:L_M|1876|Viễn Cổ Cự Thú
+event:L_M|1875|Viễn Cổ Cự Ma

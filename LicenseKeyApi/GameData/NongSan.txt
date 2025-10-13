@@ -1,0 +1,14 @@
+event:L_ITT|2481|Lúa Mạch
+event:L_ITT|2482|Lúa Gạo
+event:L_ITT|2484|Bắp
+event:L_ITT|2483|Khoai Lang
+event:L_ITT|2486|Đậu Phộng
+event:L_ITT|2485|Đậu Nành
+event:L_ITT|2487|Cải Thảo
+event:L_ITT|2488|Củ Cải
+event:L_ITT|2490|Cacao
+event:L_ITT|2489|Cao Lương
+event:L_ITT|2613|Mướp
+event:L_ITT|2614|Bầu
+event:L_ITT|1111|Hoàng Kim Quả
+event:L_ITT|1111|Bông Cải

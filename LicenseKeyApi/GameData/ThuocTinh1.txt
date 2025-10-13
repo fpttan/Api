@@ -1,0 +1,33 @@
+event:L_EQT|1442|Tâm Linh Khống
+event:L_EQT|1452|Lục Sắc Văn
+event:L_EQT|1462|Hắc Ám Ủng
+event:L_EQT|1447|Dã Nguyên Sinh
+event:L_EQT|1457|Tinh Chuẩn Cơ Khí
+event:L_EQT|1467|Long Linh Lực
+event:L_EQT|1502|Bảo Liên Lục
+event:L_EQT|1522|Huyền Dực Phi Thoa
+event:L_EQT|1542|Thiết Phong Liệt Nhẫn
+event:L_EQT|1512|Chu Viêm Thương Nhật
+event:L_EQT|1532|Bộc Liệt Tinh Huy
+event:L_EQT|1552|Thiên Mệnh Tý Hữu
+event:L_EQT|1562|Thanh Cúc Thích
+event:L_EQT|1582|Thiên Củng Tinh
+event:L_EQT|1602|Phong Tình Lương Hình
+event:L_EQT|1572|Linh Mỹ Mộng
+event:L_EQT|1592|Thương Ma Nộ
+event:L_EQT|1612|Long Lân Dực Văn
+event:L_EQT|1648|Thiết Đế Thanh
+event:L_EQT|1682|Yêu Lan Mị
+event:L_EQT|1818|Nghịch Lân Tích
+event:L_EQT|1664|Tuyền Phong Tâm
+event:L_EQT|1808|Duyệt Nhĩ Linh
+event:L_EQT|1854|Tinh Linh Uyển
+event:L_EQT|1871|Giọt Máu Xà Ma
+event:L_EQT|2030|Bộ Quyền Toái Thạch
+event:L_EQT|2258|Sắc Thạch Quang
+event:L_EQT|1932|Phong Linh Chi Tư
+event:L_EQT|2085|Hỗn Thạch Linh
+event:L_EQT|2204|Thiên Dật Lăng
+event:L_EQT|2228|Bụi Lữ Nhân
+event:L_EQT|2277|Vân Cẩm
+event:L_EQT|2240|Bụi Thường Thế
