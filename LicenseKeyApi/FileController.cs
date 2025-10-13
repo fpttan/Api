@@ -9,7 +9,7 @@ public class FileController : ControllerBase
     private readonly LicenseDbContext _context;
 
     // Thư mục chứa các file dữ liệu trên server – nên đưa vào appsettings về sau
-    public static readonly string DataRoot = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\..\GameData") );
+    public static readonly string DataRoot  = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "GameData"));
 
     // Chỉ cho phép các loại file này
     private static readonly HashSet<string> AllowedExt = new(StringComparer.OrdinalIgnoreCase)
