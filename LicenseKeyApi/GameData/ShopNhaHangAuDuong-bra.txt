@@ -1,0 +1,9 @@
+event:L_ITT|262|Carne de porco
+event:L_ITT|268|Carne
+event:L_ITT|261|Macarrão com carne
+event:L_ITT|259|Hamburger
+event:L_ITT|260|Macarrão especial
+event:L_ITT|264|Sushi
+event:L_ITT|265|Rolinho primavera
+event:L_ITT|105|Batatas Fritas
+event:L_ITT|267|Arroz com frango

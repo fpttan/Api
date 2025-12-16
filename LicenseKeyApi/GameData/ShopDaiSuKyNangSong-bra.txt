@@ -1,0 +1,25 @@
+event:L_ITT|2413|Receita de Hambúrguer
+event:L_ITT|2440|Receita de Sushi Nigiri
+event:L_ITT|2441|Receita de Batata Frita
+event:L_ITT|2442|Receita de Macarrão Sauced
+event:L_ITT|2444|Receita de combo de Misturas
+event:L_ITT|2446|Receita de Rolinho Primavera
+event:L_ITT|2452|Receita de Hambúrguer Grande
+event:L_ITT|2447|Receita de Sopão
+event:L_ITT|2443|Receita de uma Grande Tigela de Talharim com Carne
+event:L_ITT|2445|Receita de Talharim com Carne Grossa
+event:L_ITT|2448|Receita de Sopão com Frutos do Mar Refogados
+event:L_ITT|2450|Receita de Sopa de Tofu com Frutos do Mar
+event:L_ITT|2455|Receita de Super Hambúrguer
+event:L_ITT|2456|Receita de Repolho Cozido
+event:L_ITT|2457|Peixe Adocicado Frito Crocante
+event:L_ITT|2458|Receitas de arroz frito
+event:L_ITT|2466|Fórmula de Pílula Demoníaca
+event:L_ITT|2465|Fórmula de Orvalho de Gota de Chuva
+event:L_ITT|2467|Fórmula da Água dos Milagres
+event:L_ITT|2469|Fórmula de Água Lunar
+event:L_ITT|2468|Fórmula de Água Solar
+event:L_ITT|2470|Fórmula de Poção Límpida
+event:L_ITT|2471|Fórmula de Medicamento de Mana
+event:L_ITT|2472|Fórmula de Pílula de Fragrância do Paraíso
+event:L_ITT|2473|Fórmula de Orvalho de Noz-moscada

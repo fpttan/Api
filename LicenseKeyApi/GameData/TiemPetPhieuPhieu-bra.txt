@@ -1,0 +1,7 @@
+event:L_ITT|1724|Fotossíntese
+event:L_ITT|1646|Toque Fatal
+event:L_ITT|427|Poção Avançado de Lealdade do Mascote
+event:L_ITT|425|Poção Básica de Lealdade do Mascote
+event:L_ITT|426|Poção Intermediário de Lealdade do Mascote
+event:L_ITT|1534|Pílula de Extensão de Vida do Mascote Avançada
+event:L_ITT|1533|Pílula de Extensão de Vida de Mascote

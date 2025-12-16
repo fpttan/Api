@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LicenseKeyApi.Migrations
 {
-    [DbContext(typeof(LicenseDbContext))]
+    [DbContext(typeof(ApiDbContext))]
     [Migration("20250226153937_InitialCreate")]
     partial class InitialCreate
     {

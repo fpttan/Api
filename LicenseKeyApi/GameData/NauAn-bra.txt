@@ -1,0 +1,28 @@
+event:L_ITT|380|Sushi grande|lv1
+event:L_ITT|374|Grande Hambúrguer|lv1
+event:L_ITT|269|Arroz frito|lv2
+event:L_ITT|376|Macarrão com Carne bovina|lv2
+event:L_ITT|377|Macarrão com carne assada|lv2
+event:L_ITT|1638|Banquete de Frutos do Mar|lv2
+event:L_ITT|383|Sopa de Tofu com Frutos do Mar|lv2
+event:L_ITT|375|Super Hambúrguer|lv2
+event:L_ITT|2415|Repolho Cozido|lv3
+event:L_ITT|2416|Peixe Frito Crocante|lv3
+event:L_ITT|2417|Peixe Frito Crocante|lv3
+event:L_ITT|2418|Arroz frito com rabanete|lv4
+event:L_ITT|2419|Sopa de Truta Dourada|lv4
+event:L_ITT|2420|Marisco e Carne|lv4
+event:L_ITT|2421|Vinho Branco seco|lv5
+event:L_ITT|2422|ovas de tainha|lv5
+event:L_ITT|2423|Doce de café|lv5
+event:L_ITT|2424|Supremo Shuanghui|lv5
+event:L_ITT|2541|Sopa Sedan|lv5
+event:L_ITT|2664|Perca Listrada Adocicada|lv5
+event:L_ITT|2665|Salmonete de vinho|lv5
+event:L_ITT|2666|Peixe com Molho de Cacau|lv5
+event:L_ITT|2566|Frutos do Mar com Vegetais no vapor|lv6
+event:L_ITT|2565|Sopa de Peixe com Cabaça|lv6
+event:L_ITT|2563|Peixe com Vegetais no vapor|lv6
+event:L_ITT|2562|Combo de Frutos do Mar|lv6
+event:L_ITT|2703|Sopa de bacalhau Loofah|lv6
+event:L_ITT|2714|Sopa de peixe fresco com peito|lv6

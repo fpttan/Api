@@ -1,0 +1,8 @@
+event:L_ITT|1|Pílula Vermelha
+event:L_ITT|158|Pilula Azul
+event:L_ITT|126|Poção de MP média
+event:L_ITT|4|Poção de Tratamento
+event:L_ITT|125|Poção de MP
+event:L_ITT|110|Pílula da Salvação
+event:L_ITT|370|Medicamento Mágico
+event:L_ITT|371|Medicamento de Ares

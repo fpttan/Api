@@ -1,0 +1,794 @@
+[
+  {
+    "Code": 1,
+    "Name": "Vila izumo"
+  },
+  {
+    "Code": 2,
+    "Name": "Subúrbio leste"
+  },
+  {
+    "Code": 3,
+    "Name": "Pantanal das nuvens"
+  },
+  {
+    "Code": 4,
+    "Name": "Espaço Zen"
+  },
+  {
+    "Code": 5,
+    "Name": "Vila do Sol"
+  },
+  {
+    "Code": 6,
+    "Name": "Lago do Sol Sul"
+  },
+  {
+    "Code": 7,
+    "Name": "Caminho do Bamboo"
+  },
+  {
+    "Code": 8,
+    "Name": "Pradaria Ta-Ke"
+  },
+  {
+    "Code": 9,
+    "Name": "Cidade de Dong-xuen"
+  },
+  {
+    "Code": 10,
+    "Name": "Cidade dos Duendes"
+  },
+  {
+    "Code": 11,
+    "Name": "Academia Liao-yun"
+  },
+  {
+    "Code": 12,
+    "Name": "Academia de Pangea"
+  },
+  {
+    "Code": 13,
+    "Name": "Academia Espirito dançante"
+  },
+  {
+    "Code": 14,
+    "Name": "Areia do mar vago"
+  },
+  {
+    "Code": 15,
+    "Name": "Lago do Sol Norte"
+  },
+  {
+    "Code": 16,
+    "Name": "Floresta Yu-feng"
+  },
+  {
+    "Code": 17,
+    "Name": "Ilha do Sol"
+  },
+  {
+    "Code": 18,
+    "Name": "Terra das rochas mágicas"
+  },
+  {
+    "Code": 19,
+    "Name": "Bacia do vale Linglan"
+  },
+  {
+    "Code": 21,
+    "Name": "Abismo da calmaria"
+  },
+  {
+    "Code": 22,
+    "Name": "Meilin nevada"
+  },
+  {
+    "Code": 25,
+    "Name": "Academia estrela de fogo"
+  },
+  {
+    "Code": 26,
+    "Name": "Planalto do sol nascente"
+  },
+  {
+    "Code": 27,
+    "Name": "Floresta Adormecida"
+  },
+  {
+    "Code": 28,
+    "Name": "Montanhas Yu-lu"
+  },
+  {
+    "Code": 31,
+    "Name": "Cidade de Xian-duo"
+  },
+  {
+    "Code": 32,
+    "Name": "Academia Aboboda do céu"
+  },
+  {
+    "Code": 33,
+    "Name": "Duo-la neve"
+  },
+  {
+    "Code": 34,
+    "Name": "Paraiso da Sakura dançante"
+  },
+  {
+    "Code": 55,
+    "Name": "Aldeia Solitária"
+  },
+  {
+    "Code": 101,
+    "Name": "Área para Coletar Tesouros"
+  },
+  {
+    "Code": 38,
+    "Name": "Cidade de Pompéia"
+  },
+  {
+    "Code": 39,
+    "Name": "Academia Tian-shu"
+  },
+  {
+    "Code": 40,
+    "Name": "Oasis do céu"
+  },
+  {
+    "Code": 41,
+    "Name": "Pantanal Proibido"
+  },
+  {
+    "Code": 102,
+    "Name": "Local de Pesca"
+  },
+  {
+    "Code": 71,
+    "Name": "Templo espiritual"
+  },
+  {
+    "Code": 42,
+    "Name": "Caminho dos raivosos"
+  },
+  {
+    "Code": 2000,
+    "Name": "Arena"
+  },
+  {
+    "Code": 2001,
+    "Name": "Árvore da Maravilha - 1ªAndar"
+  },
+  {
+    "Code": 500,
+    "Name": "Tesouro do Deserto - 1ªAndar"
+  },
+  {
+    "Code": 501,
+    "Name": "Tesouro do Deserto - 2ªAndar"
+  },
+  {
+    "Code": 502,
+    "Name": "Tesouro do Deserto - 3ªAndar"
+  },
+  {
+    "Code": 503,
+    "Name": "Tesouro do Deserto - 4ªAndar"
+  },
+  {
+    "Code": 504,
+    "Name": "Tesouro do Deserto - 5ªAndar"
+  },
+  {
+    "Code": 140105,
+    "Name": "Passagem Secreta 2ªAndar"
+  },
+  {
+    "Code": 140106,
+    "Name": "Passagem Secreta 1ªAndar"
+  },
+  {
+    "Code": 2002,
+    "Name": "Árvore da Maravilha - 2ªAndar"
+  },
+  {
+    "Code": 29,
+    "Name": "Terra da luz perdida"
+  },
+  {
+    "Code": 23,
+    "Name": "Vale do dem�nio"
+  },
+  {
+    "Code": 37,
+    "Name": "Antigas Ruinas"
+  },
+  {
+    "Code": 24,
+    "Name": "Terra do guardião"
+  },
+  {
+    "Code": 51,
+    "Name": "Sala Oculta do Tesouro"
+  },
+  {
+    "Code": 52,
+    "Name": "Torre Monstruosa - Nível 50"
+  },
+  {
+    "Code": 49,
+    "Name": "Mapa do clã"
+  },
+  {
+    "Code": 50,
+    "Name": "Caverna de minério"
+  },
+  {
+    "Code": 43,
+    "Name": "Abismo polar"
+  },
+  {
+    "Code": 45,
+    "Name": "Terra dos Sonhos Mortos"
+  },
+  {
+    "Code": 48,
+    "Name": "Torre dos monstros"
+  },
+  {
+    "Code": 46,
+    "Name": "Terra aa Espada Espiritual"
+  },
+  {
+    "Code": 36,
+    "Name": "Terra das ilusões"
+  },
+  {
+    "Code": 20,
+    "Name": "Terra das promessas"
+  },
+  {
+    "Code": 30,
+    "Name": "Cidade da Saudade"
+  },
+  {
+    "Code": 505,
+    "Name": "Verdânia - 1ªAndar"
+  },
+  {
+    "Code": 506,
+    "Name": "Verdânia - 2ªAndar"
+  },
+  {
+    "Code": 507,
+    "Name": "Verdânia - 3ªAndar"
+  },
+  {
+    "Code": 508,
+    "Name": "Verdânia - 4ªAndar"
+  },
+  {
+    "Code": 509,
+    "Name": "Verdânia - 5ªAndar"
+  },
+  {
+    "Code": 47,
+    "Name": "Espaço dos monstros"
+  },
+  {
+    "Code": 510,
+    "Name": "Caverna do Lobo - 1ªAndar"
+  },
+  {
+    "Code": 511,
+    "Name": "Caverna do Lobo - 2ªAndar"
+  },
+  {
+    "Code": 512,
+    "Name": "Caverna do Lobo - 3ªAndar - Oeste"
+  },
+  {
+    "Code": 513,
+    "Name": "Caverna do Lobo - 3ªAndar - Leste"
+  },
+  {
+    "Code": 514,
+    "Name": "Caverna do Lobo - 4ªAndar"
+  },
+  {
+    "Code": 53,
+    "Name": "Terra Deslumbrante"
+  },
+  {
+    "Code": 44,
+    "Name": "Terra da Escalada a Nuvem"
+  },
+  {
+    "Code": 140104,
+    "Name": "Passagem Secreta 3ªAndar"
+  },
+  {
+    "Code": 54,
+    "Name": "Arena de Batalha dos Clãs"
+  },
+  {
+    "Code": 515,
+    "Name": "Torre Mágica Mística"
+  },
+  {
+    "Code": 56,
+    "Name": "Selva encantada"
+  },
+  {
+    "Code": 35,
+    "Name": "Campo da rocha gelada"
+  },
+  {
+    "Code": 517,
+    "Name": "Abismo das Chamas -1ªAndar"
+  },
+  {
+    "Code": 518,
+    "Name": "Abismo das Chamas - 2ªAndar"
+  },
+  {
+    "Code": 519,
+    "Name": "Abismo das Chamas - 3ªAndar"
+  },
+  {
+    "Code": 520,
+    "Name": "Abismo das Chamas - 4ªAndar"
+  },
+  {
+    "Code": 516,
+    "Name": "Espaço Dimensional"
+  },
+  {
+    "Code": 57,
+    "Name": "Fazenda 1"
+  },
+  {
+    "Code": 59,
+    "Name": "Campo de Batalha"
+  },
+  {
+    "Code": 58,
+    "Name": "Fazenda 2"
+  },
+  {
+    "Code": 61,
+    "Name": "Ilha da morte"
+  },
+  {
+    "Code": 60,
+    "Name": "Campo de Batalha de Aquiles"
+  },
+  {
+    "Code": 63,
+    "Name": "Salão de Casamento Avançado"
+  },
+  {
+    "Code": 62,
+    "Name": "Novo Mapa ++ 2"
+  },
+  {
+    "Code": 64,
+    "Name": "Salão de Casamento Normal"
+  },
+  {
+    "Code": 65,
+    "Name": "Salão de Casamento Luxuoso"
+  },
+  {
+    "Code": 66,
+    "Name": "Areia do Mar Vago"
+  },
+  {
+    "Code": 67,
+    "Name": "Porto noturno"
+  },
+  {
+    "Code": 68,
+    "Name": "Vale das Tempestades"
+  },
+  {
+    "Code": 69,
+    "Name": "Paraiso dos Vampiros"
+  },
+  {
+    "Code": 70,
+    "Name": "Campo de Neve"
+  },
+  {
+    "Code": 72,
+    "Name": "Avenida dos Bolos"
+  },
+  {
+    "Code": 2004,
+    "Name": "Abismo 4ªAndar"
+  },
+  {
+    "Code": 2003,
+    "Name": "Abismo 3ªAndar"
+  },
+  {
+    "Code": 521,
+    "Name": "Mundo Submarino 1ªAndar"
+  },
+  {
+    "Code": 522,
+    "Name": "Mundo Submarino 2ªAndar"
+  },
+  {
+    "Code": 523,
+    "Name": "Mundo Submarino 3ªAndar"
+  },
+  {
+    "Code": 524,
+    "Name": "Mundo Submarino 4ªAndar"
+  },
+  {
+    "Code": 525,
+    "Name": "Cidade Caida"
+  },
+  {
+    "Code": 526,
+    "Name": "Portões do Inferno"
+  },
+  {
+    "Code": 527,
+    "Name": "Instituto Local de Dong-Xuen"
+  },
+  {
+    "Code": 528,
+    "Name": "Ilha Misteriosa"
+  },
+  {
+    "Code": 2005,
+    "Name": "Salão Mágico"
+  },
+  {
+    "Code": 529,
+    "Name": "Colégio Local Leste"
+  },
+  {
+    "Code": 530,
+    "Name": "Colégio Local Oeste"
+  },
+  {
+    "Code": 2006,
+    "Name": "Inferno de Lava"
+  },
+  {
+    "Code": 73,
+    "Name": "Campo de batalha dos corajosos"
+  },
+  {
+    "Code": 531,
+    "Name": "Mundo Submarino 5ªAndar"
+  },
+  {
+    "Code": 2010,
+    "Name": "Caverna dos Zumbis 1ª Andar"
+  },
+  {
+    "Code": 2007,
+    "Name": "Arranjo Louco"
+  },
+  {
+    "Code": 2008,
+    "Name": "Arranjo Louco"
+  },
+  {
+    "Code": 2009,
+    "Name": "Arranjo Louco"
+  },
+  {
+    "Code": 2011,
+    "Name": "Caverna dos Zumbis 2° Andar"
+  },
+  {
+    "Code": 2012,
+    "Name": "Caverna dos Zumbis 3° Andar"
+  },
+  {
+    "Code": 2015,
+    "Name": "Campo de Batalha Noturno"
+  },
+  {
+    "Code": 2014,
+    "Name": "Campo dos Sonhos"
+  },
+  {
+    "Code": 2013,
+    "Name": "Vila Izumo dos Sonhos"
+  },
+  {
+    "Code": 532,
+    "Name": "Local de Festas"
+  },
+  {
+    "Code": 75,
+    "Name": "Campo de batalha PK"
+  },
+  {
+    "Code": 533,
+    "Name": "Cidade da memória"
+  },
+  {
+    "Code": 534,
+    "Name": "Gruta do Rei Boneco de Neve"
+  },
+  {
+    "Code": 557,
+    "Name": "Andar da ilusão 20"
+  },
+  {
+    "Code": 556,
+    "Name": "Andar da ilusão 19"
+  },
+  {
+    "Code": 555,
+    "Name": "Andar da ilusão 18"
+  },
+  {
+    "Code": 554,
+    "Name": "Andar da ilusão 17"
+  },
+  {
+    "Code": 553,
+    "Name": "Andar da ilusão 16"
+  },
+  {
+    "Code": 552,
+    "Name": "Andar da ilusão 15"
+  },
+  {
+    "Code": 551,
+    "Name": "Andar da ilusão 14"
+  },
+  {
+    "Code": 550,
+    "Name": "Andar da ilusão 13"
+  },
+  {
+    "Code": 549,
+    "Name": "Andar da ilusão 12"
+  },
+  {
+    "Code": 548,
+    "Name": "Andar da ilusão 11"
+  },
+  {
+    "Code": 547,
+    "Name": "Andar da ilusão 10"
+  },
+  {
+    "Code": 546,
+    "Name": "Andar da ilusão 9"
+  },
+  {
+    "Code": 545,
+    "Name": "Andar da ilusão 8"
+  },
+  {
+    "Code": 544,
+    "Name": "Andar da ilusão 7"
+  },
+  {
+    "Code": 543,
+    "Name": "Andar da ilusão 6"
+  },
+  {
+    "Code": 542,
+    "Name": "Andar da ilusão 5"
+  },
+  {
+    "Code": 541,
+    "Name": "Andar da ilusão 4"
+  },
+  {
+    "Code": 540,
+    "Name": "Andar da ilusão 3"
+  },
+  {
+    "Code": 539,
+    "Name": "Andar da ilusão 2"
+  },
+  {
+    "Code": 538,
+    "Name": "Andar da ilusão 1"
+  },
+  {
+    "Code": 537,
+    "Name": "Lobby 3"
+  },
+  {
+    "Code": 536,
+    "Name": "Lobby 2"
+  },
+  {
+    "Code": 535,
+    "Name": "Lobby 1"
+  },
+  {
+    "Code": 77,
+    "Name": "Lobby Kistler"
+  },
+  {
+    "Code": 76,
+    "Name": "Praça Kistler"
+  },
+  {
+    "Code": 576,
+    "Name": "Entrada Perdida 15"
+  },
+  {
+    "Code": 575,
+    "Name": "Entrada Perdida 14"
+  },
+  {
+    "Code": 574,
+    "Name": "Entrada Perdida 13"
+  },
+  {
+    "Code": 573,
+    "Name": "Entrada Perdida 12"
+  },
+  {
+    "Code": 572,
+    "Name": "Entrada Perdida 11"
+  },
+  {
+    "Code": 571,
+    "Name": "Entrada Perdida 10"
+  },
+  {
+    "Code": 570,
+    "Name": "Entrada Perdida 9"
+  },
+  {
+    "Code": 569,
+    "Name": "Entrada Perdida 8"
+  },
+  {
+    "Code": 568,
+    "Name": "Entrada Perdida 7"
+  },
+  {
+    "Code": 567,
+    "Name": "Entrada Perdida 6"
+  },
+  {
+    "Code": 566,
+    "Name": "Entrada Perdida 5"
+  },
+  {
+    "Code": 565,
+    "Name": "Entrada Perdida 4"
+  },
+  {
+    "Code": 564,
+    "Name": "Entrada Perdida 3"
+  },
+  {
+    "Code": 563,
+    "Name": "Entrada Perdida 2"
+  },
+  {
+    "Code": 562,
+    "Name": "Entrada Perdida 1"
+  },
+  {
+    "Code": 561,
+    "Name": "Entrada da Coragem"
+  },
+  {
+    "Code": 560,
+    "Name": "Entrada do Destino"
+  },
+  {
+    "Code": 559,
+    "Name": "Entrada da Fé"
+  },
+  {
+    "Code": 558,
+    "Name": "Entrada da Reencarnação"
+  },
+  {
+    "Code": 78,
+    "Name": "Campo de batalha"
+  },
+  {
+    "Code": 577,
+    "Name": "Espaço Dimensional 2° Andar"
+  },
+  {
+    "Code": 87,
+    "Name": "Eliminar magia"
+  },
+  {
+    "Code": 86,
+    "Name": "Reencarnação do Claustro infinito"
+  },
+  {
+    "Code": 85,
+    "Name": "Abismo do Claustro infinito"
+  },
+  {
+    "Code": 84,
+    "Name": "Purgatório do Claustro infinito"
+  },
+  {
+    "Code": 83,
+    "Name": "Rachadura do Claustro infinito"
+  },
+  {
+    "Code": 82,
+    "Name": "Decisão do Claustro infinito"
+  },
+  {
+    "Code": 81,
+    "Name": "Frio do Claustro infinito"
+  },
+  {
+    "Code": 80,
+    "Name": "Chama do Claustro Infinito"
+  },
+  {
+    "Code": 79,
+    "Name": "Partida do Claustro Infinito"
+  },
+  {
+    "Code": 110,
+    "Name": "Castelo Escarlate"
+  },
+  {
+    "Code": 580,
+    "Name": "Ilha do Mal"
+  },
+  {
+    "Code": 579,
+    "Name": "Mundo Real"
+  },
+  {
+    "Code": 578,
+    "Name": "Floresta Digital"
+  },
+  {
+    "Code": 88,
+    "Name": "Cidade do Céu"
+  },
+  {
+    "Code": 581,
+    "Name": "Caminho Infinito"
+  },
+  {
+    "Code": 582,
+    "Name": "Interior"
+  },
+  {
+    "Code": 583,
+    "Name": "Espaço Secreto"
+  },
+  {
+    "Code": 584,
+    "Name": "Corredor perigoso"
+  },
+  {
+    "Code": 585,
+    "Name": "Ilha Solitária"
+  },
+  {
+    "Code": 586,
+    "Name": "Torre da Sabedoria"
+  },
+  {
+    "Code": 587,
+    "Name": "Espaço Calmo"
+  },
+  {
+    "Code": 588,
+    "Name": "Antigo Guardião"
+  }
+]

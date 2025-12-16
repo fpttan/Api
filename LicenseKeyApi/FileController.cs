@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -6,10 +8,12 @@ using System.Text;
 [ApiController]
 public class FileController : ControllerBase
 {
-    private readonly LicenseDbContext _context;
+    private readonly ApiDbContext _context;
 
     // Thư mục chứa các file dữ liệu trên server – nên đưa vào appsettings về sau
     public static readonly string DataRoot  = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "GameData"));
+    // Thư mục chứa các file dữ liệu trên server – nên đưa vào appsettings về sau
+    public static readonly string ImageDataRoot = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "Images"));
 
     // Chỉ cho phép các loại file này
     private static readonly HashSet<string> AllowedExt = new(StringComparer.OrdinalIgnoreCase)
@@ -17,7 +21,7 @@ public class FileController : ControllerBase
         ".txt", ".json"
     };
 
-    public FileController(LicenseDbContext context)
+    public FileController(ApiDbContext context)
     {
         _context = context;
     }
@@ -44,6 +48,16 @@ public class FileController : ControllerBase
     public IActionResult GetFileContent([FromQuery] string key, [FromQuery] string name)
     {
         if (!IsValidLicense(key, out _)) return NotFound("License không tồn tại.");
+
+        var license = _context.Licenses.Find(key);
+        if (license == null) return NotFound();
+
+        var now = DateTime.UtcNow;
+        bool expiredDaily = license.TimeExpireDaily.HasValue && license.TimeExpireDaily.Value <= now;
+        bool expired200v = license.TimeExpire200v.HasValue && license.TimeExpire200v.Value <= now;
+        if (expiredDaily && expired200v)
+            return StatusCode(StatusCodes.Status403Forbidden, "License đã hết hạn sử dụng");
+
         if (!TryResolveSafePath(name, out var fullPath, out var err)) return BadRequest(err);
         if (!System.IO.File.Exists(fullPath)) return NotFound("File không tồn tại.");
 
@@ -57,14 +71,21 @@ public class FileController : ControllerBase
     }
 
     [HttpGet("valuetele")]
-    public IActionResult GetDataTele([FromQuery] string key)
+    public IActionResult GetDataTele([FromQuery] string key, [FromServices] IAppLogger logger)
     {
         if (string.IsNullOrEmpty(key))
         {
+            logger.Warn("GetDataTele called without LicenseKey");
             return BadRequest("Vui lòng cung cấp LicenseKey.");
         }
         var license = _context.Licenses.Find(key);
         if (license == null) return NotFound();
+        var now = DateTime.UtcNow;
+        bool expiredDaily = license.TimeExpireDaily.HasValue && license.TimeExpireDaily.Value <= now;
+        bool expired200v = license.TimeExpire200v.HasValue && license.TimeExpire200v.Value <= now;
+        if (expiredDaily && expired200v)
+            return StatusCode(StatusCodes.Status403Forbidden, "License đã hết hạn sử dụng");
+
         var Data = 12884901889;
         // Mã hóa AES tương tự LicenseController
         string cipher = EncryptData(Data.ToString(), out string ivBase64);
@@ -72,7 +93,39 @@ public class FileController : ControllerBase
         return Ok(new { data = cipher, data2 = ivBase64 });
 
     }
+  
+    [HttpGet("image")]
+    public IActionResult GetImage([FromQuery] string key, [FromQuery] string path, [FromServices] IAppLogger logger)
+    {
+        if (!IsValidLicense(key, out _)) 
+        {
+            logger.Warn("GetImage called with invalid LicenseKey: " + key);
+            return BadRequest("LicenseKey không hợp lệ.");
+        } 
 
+        var license = _context.Licenses.Find(key);
+        if (license == null) return NotFound();
+
+        var now = DateTime.UtcNow;
+        bool expiredDaily = license.TimeExpireDaily.HasValue && license.TimeExpireDaily.Value <= now;
+        bool expired200v = license.TimeExpire200v.HasValue && license.TimeExpire200v.Value <= now;
+        if (expiredDaily && expired200v)
+            return StatusCode(StatusCodes.Status403Forbidden, "License đã hết hạn sử dụng");
+
+        if (string.IsNullOrWhiteSpace(path))
+            return BadRequest(new { error = "Path is required" });
+
+        // Chuẩn hóa path
+        path = path.Replace("\\", "/");
+
+        string fullPath = Path.Combine(ImageDataRoot, path);
+
+        if (!System.IO.File.Exists(fullPath))
+            return NotFound(new { error = "Image not found", file = path });
+
+        byte[] fileBytes = System.IO.File.ReadAllBytes(fullPath);
+        return File(fileBytes, "image/png");
+    }
     // ============ QUẢN TRỊ (cần X-API-KEY) ============
 
     // ✅ Liệt kê chi tiết cho admin
@@ -106,6 +159,7 @@ public class FileController : ControllerBase
 
         var bytes = System.IO.File.ReadAllBytes(fullPath);
         return File(bytes, "application/octet-stream", Path.GetFileName(fullPath));
+        
     }
 
     // ============ Helpers ============

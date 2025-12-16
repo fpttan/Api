@@ -1,0 +1,11 @@
+event:L_M|792|Valamor Elite
+event:L_M|793|Shu dias de elite
+event:L_M|794|meteoros elite
+event:L_M|794|Elite Pangea
+event:L_M|794|Spirit Dance Elite
+event:L_M|794|elite Tease nuvem
+event:L_M|477|General Rebelde
+event:L_M|775|Delator
+event:L_M|837|Mosca diabo colar
+event:L_M|1876|Gigante Antigo
+event:L_M|1875|Chefe do Exércit

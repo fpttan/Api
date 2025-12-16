@@ -12,3 +12,4 @@ event:L_ITT|2613|Mướp
 event:L_ITT|2614|Bầu
 event:L_ITT|1111|Hoàng Kim Quả
 event:L_ITT|1111|Bông Cải
+e|e|Cây Kim Tiền

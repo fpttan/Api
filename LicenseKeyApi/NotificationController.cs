@@ -13,34 +13,55 @@ public class NotificationController : ControllerBase
         _notificationService = notificationService;
     }
 
-    // ✅ Lấy thông báo VN (đã mã hóa)
-[HttpGet("vn")]
-public IActionResult GetNotificationVN()
-{
-    return Ok(EncryptResponse(_notificationService.GetNotificationVN()));
-}
+    // ✅ Lấy DomainVN (đã mã hóa)
+    [HttpGet("vn_domain")]
+    public IActionResult GetVietNamDomain()
+    {
+        return Ok(EncryptResponse(_notificationService.GetVietNamDomain()));
+    }
+    [HttpGet("bra_domain")]
+    public IActionResult GetBrazilDomain()
+    {
+        return Ok(EncryptResponse(_notificationService.GetBrazilDomain()));
+    }
+    [HttpGet("neo_domain")]
+    public IActionResult GetNeoDomain()
+    {
+        return Ok(EncryptResponse(_notificationService.GetNeoDomain()));
+    }
+
+    [HttpGet("vn")]
+    public IActionResult GetNotificationVN()
+    {
+        return Ok(EncryptResponse(_notificationService.GetNotificationVN()));
+    }
 
 // ✅ Lấy thông báo Brazil (đã mã hóa)
-[HttpGet("bra")]
-public IActionResult GetNotificationBRA()
-{
-    return Ok(EncryptResponse(_notificationService.GetNotificationBRA()));
-}
+    [HttpGet("bra")]
+    public IActionResult GetNotificationBRA()
+    {
+        return Ok(EncryptResponse(_notificationService.GetNotificationBRA()));
+    }
 
 // ✅ Lấy link tải xuống VN (đã mã hóa)
-[HttpGet("linkdown/vn")]
-public IActionResult GetLinkdownVN()
-{
-    return Ok(EncryptResponse(_notificationService.GetLinkdownVN()));
-}
+    [HttpGet("linkdown/vn")]
+    public IActionResult GetLinkdownVN()
+    {
+        return Ok(EncryptResponse(_notificationService.GetLinkdownVN()));
+    }
 
-// ✅ Lấy link tải xuống Brazil (đã mã hóa)
-[HttpGet("linkdown/bra")]
-public IActionResult GetLinkdownBRA()
-{
-    return Ok(EncryptResponse(_notificationService.GetLinkdownBRA()));
-}
-
+    // ✅ Lấy link tải xuống Brazil (đã mã hóa)
+    [HttpGet("linkdown/bra")]
+    public IActionResult GetLinkdownBRA()
+    {
+        return Ok(EncryptResponse(_notificationService.GetLinkdownBRA()));
+    }
+    // ✅ Lấy ghi chú cập nhật (đã mã hóa)
+    [HttpGet("release_notes")]
+    public IActionResult GetReleaseUpdateNotes()    
+    {
+        return Ok(EncryptResponse(_notificationService.GetReleaseUpdateNotes()));
+    }
 
     // ✅ API cập nhật thông báo tiếng Việt (chỉ admin)
     [HttpPost("vn")]
@@ -77,7 +98,38 @@ public IActionResult GetLinkdownBRA()
         _notificationService.UpdateLinkdownBRA(link);
         return Ok("Link de download do Brasil atualizado.");
     }
-
+    // ✅ API cập nhật domain VN (chỉ admin)
+    [HttpPost("domain_vn")]
+    public IActionResult UpdateDomainVN([FromHeader(Name = "X-API-KEY")] string apiKey, [FromBody] string domain)
+    {
+        if (apiKey != ApiKeyMiddleware.AdminApiKey) return Forbid();
+        _notificationService.UpdateDomainVN(domain);
+        return Ok("Domain VN đã cập nhật.");
+    }
+    // ✅ API cập nhật domain Brazil (chỉ admin)
+    [HttpPost("domain_bra")]
+    public IActionResult UpdateDomainBrazil([FromHeader(Name = "X-API-KEY")] string apiKey, [FromBody] string domain)
+    {
+        if (apiKey != ApiKeyMiddleware.AdminApiKey) return Forbid();
+        _notificationService.UpdateDomainBrazil(domain);
+        return Ok("Domain Brazil đã cập nhật.");
+    }
+    // ✅ API cập nhật domain Neo (chỉ admin)
+    [HttpPost("domain_neo")]
+    public IActionResult UpdateDomainNeo([FromHeader(Name = "X-API-KEY")] string apiKey, [FromBody] string domain)
+    {
+        if (apiKey != ApiKeyMiddleware.AdminApiKey) return Forbid();
+        _notificationService.UpdateDomainNeo(domain);       
+        return Ok("Domain Neo đã cập nhật.");
+    }
+    // ✅ API cập nhật ghi chú cập nhật (chỉ admin)
+    [HttpPost("release_notes")]
+    public IActionResult UpdateReleaseUpdateNotes([FromHeader(Name = "X-API-KEY")] string apiKey, [FromBody] string notes)
+    {
+        if (apiKey != ApiKeyMiddleware.AdminApiKey) return Forbid();
+        _notificationService.UpdateReleaseUpdateNotes(notes);
+        return Ok("Ghi chú cập nhật đã được cập nhật.");
+    }
     // ✅ Hàm mã hóa AES-256
     private object EncryptResponse(string plainText)
     {

@@ -26,3 +26,5 @@ event:L_ITT|2563|Cá Lóc Hấp Mướp|lv6
 event:L_ITT|2562|Lẩu Hải Sản|lv6
 event:L_ITT|2703|Canh Mướp Cá Tuyết|lv6
 event:L_ITT|2714|Canh Cá Thập Cẩm|lv6
+event:L_ITT|2663|Cá Trích Hầm|lv4
+event:L_ITT|2713|Cá Trích Đông|lv4

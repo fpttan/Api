@@ -1,0 +1,21 @@
+event:L_ITT|2426|Orvalho Doce
+event:L_ITT|2425|MPoção de Sangue de Demônio
+event:L_ITT|2427|Água dos Milagres
+event:L_ITT|2428|Gota de Orvalo ao Sol
+event:L_ITT|2429|Água Lunar
+event:L_ITT|2430|Poção Límpida
+event:L_ITT|2431|Medicamento de Mana
+event:L_ITT|2432|Pílula de Fragrância do Paraíso
+event:L_ITT|2433|Orvalho de Noz-moscada
+event:L_ITT|2434|Pílula de Agilidade Esplêndida
+event:L_ITT|2435|Pó Celestial
+event:L_ITT|2436|Barreira de Incenso
+event:L_ITT|2437|Pílula Sede de Sangue
+event:L_ITT|2438|Cristal de Bordo de Metal
+event:L_ITT|2439|Essência de Nove Ervas
+event:L_ITT|2570|Pílula de Espirito do Fogo
+event:L_ITT|2567|Pílula Estelar
+event:L_ITT|2681|Medicamento de Lambo
+event:L_ITT|2684|Escalas de dragão sênior da A
+event:L_ITT|2682|Rapidez de Leopardo Avançada
+event:L_ITT|2439|Essência de Nove Ervas,

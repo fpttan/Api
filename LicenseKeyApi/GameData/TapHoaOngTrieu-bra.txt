@@ -1,0 +1,5 @@
+event:L_ITT|789|Corrente Simples de Captura
+event:L_ITT|2391|Massa
+event:L_ITT|2273|Baú do Tesouro (10 Milhões)
+event:L_ITT|2272|Baú do Tesouro (1 Milhão)
+event:L_ITT|2271|Baú do Tesouro (100000)

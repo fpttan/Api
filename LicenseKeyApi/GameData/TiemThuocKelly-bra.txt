@@ -1,0 +1,4 @@
+event:L_ITT|113|Elixir da Vida
+event:L_ITT|322|Elixir de Mana
+event:L_ITT|127|Poção de MP grande
+event:L_ITT|321|Elixir de Restauração

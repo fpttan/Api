@@ -1,0 +1,2 @@
+event:L_ITT|1975|Grande Fonte de Vida
+event:L_ITT|1974|Grande Fonte de Magia

@@ -1,0 +1,10 @@
+event:L_ITT|16|Toái Liệt Mệnh Thạch
+event:L_ITT|35|Toái Liệt Trí Thạch
+event:L_ITT|42|Toái Liệt Lực Thạch
+event:L_ITT|28|Toái Liệt Thần Thạch
+event:L_ITT|3|Toái Liệt Xảo Thạch
+event:L_IT|3|Moeda Antiga
+event:L_IT|41|Moeda de Cobre Antiga
+event:L_ITT|6|Moeda de Prata Antiga
+event:L_IT|22|Moeda de Ouro Antiga
+event:L_IT|36|Diamante Antigo

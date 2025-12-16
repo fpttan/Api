@@ -1,0 +1,14 @@
+event:L_ITT|2481|Trigo
+event:L_ITT|2482|Arroz
+event:L_ITT|2484|Milho
+event:L_ITT|2483|Batata Doce
+event:L_ITT|2486|Amendoins
+event:L_ITT|2485|Grão de Soja
+event:L_ITT|2487|Repolho Chinês
+event:L_ITT|2488|Rabanete
+event:L_ITT|2490|Cacau
+event:L_ITT|2489|Grão Fino
+event:L_ITT|2613|Bucha
+event:L_ITT|2614|Cabaça
+event:L_ITT|2617|Fruto Dourado
+event:L_ITT|1528|Brócolis
